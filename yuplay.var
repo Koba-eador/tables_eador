@@ -1,0 +1,148 @@
+/0 Предмет 1
+Num: 3
+Color: 1
+Text: Обычный 40~;
+Color: 2
+Text: Необычный 40~;
+Color: 3
+Text: Ценный 20~;
+
+/1 Предмет 2
+Num: 4
+Color: 1
+Text: Обычный 30~;
+Color: 2
+Text: Необычный 30~;
+Color: 3
+Text: Ценный 30~;
+Color: 4
+Text: Редкий 10~;
+
+/2 Предмет 3
+Num: 4
+Color: 2
+Text: Необычный 30~;
+Color: 3
+Text: Ценный 30~;
+Color: 4
+Text: Редкий 30~;
+Color: 5
+Text: Очень редкий 10~;
+
+/3 Предмет 4
+Num: 4
+Color: 3
+Text: Ценный 20~;
+Color: 4
+Text: Редкий 30~;
+Color: 5
+Text: Очень редкий 30~;
+Color: 6
+Text: Легендарный 20~;
+
+/4 Юнит 1
+Num: 2
+Color: 1
+Text: 1-й ранг 70~;
+Color: 2
+Text: 2-й ранг 30~;
+
+/5 Юнит 2
+Num: 3
+Color: 1
+Text: 1-й ранг 30~;
+Color: 2
+Text: 2-й ранг 50~;
+Color: 4
+Text: 3-й ранг 20~;
+
+/6 Юнит 3
+Num: 3
+Color: 2
+Text: 2-й ранг 20~;
+Color: 4
+Text: 3-й ранг 50~;
+Color: 6
+Text: 4-й ранг 30~;
+
+/7 Юнит 4
+Num: 2
+Color: 4
+Text: 3-й ранг 30~;
+Color: 6
+Text: 4-й ранг 70~;
+
+/8 Заклинание 1
+Num: 2
+Color: 1
+Text: 1-й круг 50~;
+Color: 2
+Text: 2-й круг 50~;
+
+/9 Заклинание 2
+Num: 3
+Color: 1
+Text: 1-й круг 20~;
+Color: 2
+Text: 2-й круг 50~;
+Color: 4
+Text: 3-й круг 30~;
+
+/10 Заклинание 3
+Num: 3
+Color: 2
+Text: 2-й круг 20~;
+Color: 4
+Text: 3-й круг 50~;
+Color: 6
+Text: 4-й круг 30~;
+
+/11 Заклинание 4
+Num: 2
+Color: 4
+Text: 3-й круг 30~;
+Color: 6
+Text: 4-й круг 70~;
+
+/12 Страж 1
+Num: 2
+Color: 2
+Text: Средний 40~;
+Color: 3
+Text: Сильный 60~;
+
+/13 Страж 2
+Num: 2
+Color: 3
+Text: Сильный 40~;
+Color: 4
+Text: Очень сильный 60~;
+
+/14 Страж 3
+Num: 2
+Color: 4
+Text: Очень сильный 40~;
+Color: 5
+Text: Великий 60~;
+
+/15 Страж 4
+Num: 2
+Color: 5
+Text: Великий 40~;
+Color: 6
+Text: Несокрушимый 60~;
+
+/16 Рандом
+Num: 6
+Color: 1
+Text: Предмет 30~;
+Color: 1
+Text: Наёмник 20~;
+Color: 1
+Text: Заклинание 20~;
+Color: 1
+Text: Страж 15~;
+Color: 1
+Text: Золото 10~;
+Color: 1
+Text: Кристаллы 5~;
