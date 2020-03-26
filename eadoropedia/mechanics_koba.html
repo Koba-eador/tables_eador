@@ -1,0 +1,2341 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+<title>Эадоропедия - Игровая механика.</title>
+</head>
+
+<body linkifytime="10" linkified="0" linkifying="false" alink="#090401" background="images/back.jpg" bgcolor="#000000" link="#090401" vlink="#090401">
+<link rel="stylesheet" href="images/style2.css" type="text/css">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+<style type="text/css"><!--
+BODY {
+scrollbar-face-color:#6E5620;
+scrollbar-highlight-color:#B09B73;
+scrollbar-3dlight-color:#B09B73;
+scrollbar-darkshadow-color:#493F15;
+scrollbar-shadow-color:#493F15;
+scrollbar-arrow-color:#947F57;
+scrollbar-track-color:#947F57;
+
+  background: url("images/back.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+
+}
+--></style>
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+  <tbody><tr>
+    <td align="center" background="images/main_top.jpg" height="65" valign="middle" width="800"><div align="center"><font color="#A5FC8F" size="+2"><strong>Игровая механика</strong></font>
+      
+        
+     
+    </div></td>
+  </tr>
+  <tr>
+   <td align="center" background="images/main_tile.jpg"><div align="center">
+     <table border="0" cellpadding="0" cellspacing="0" width="560">
+       <tbody><tr>
+         <td height="39" width="39"><img src="images/scroll_1.png" alt="" height="39" width="39"></td>
+         <td background="images/scroll_2.png" height="39" width="560">&nbsp;</td>
+         <td height="39" width="39"><img src="images/scroll_3.png" alt="" height="39" width="39"></td>
+       </tr>
+       <tr>
+         <td background="images/scroll_4.png" width="39">&nbsp;</td>
+         <td align="center" background="images/scroll_5.png" width="560">
+			
+			<p class="niceheader"><a name="0"></a>Оглавление</p>
+			
+			<!-- Content -->
+			<a href="#1">Уровни сложности игры</a><br>
+			<a href="#2">Провинции</a><br>
+			<a href="#3">Урон от заклинаний</a><br>
+			<a href="#4">Боевой дух (мораль)</a><br>
+			<a href="#5">Выносливость</a><br>
+			<a href="#6">Тяжёлые ранения</a><br>
+			<a href="#7">Расчёт урона при атаках</a><br>
+			<a href="#8">Опыт за бой</a><br>
+			<a href="#9">Таблица опыта юнита</a><br>
+			<a href="#10">Таблица опыта героя</a><br>
+			<a href="#11">Медали юнитов</a><br>
+			<a href="#12">Медали за осколок</a><br>
+			<a href="#13">Цены на ресурсы</a><br>
+			<a href="#14">Коррупция</a><br>
+			<a href="#15">Износ оружия и брони</a><br>
+			<a href="#16">Паника</a><br>
+			<a href="#17">Знание леса/болот/холмов</a><br>
+			<a href="#18">Лечение</a><br>
+			<a href="#19">Диверсии</a><br>
+			<a href="#20">Бонус/штраф от кармы к БД юнитов</a><br>
+			<a href="#21">Способности "Мародёр" и "Грабитель"</a><br>
+			<a href="#22">Цвета предметов (раритетность)</a><br>
+			
+			
+			  <p class="niceheader"><a name="1"></a>Уровни сложности игры</p>
+				 <table border="1" cellpadding="0" cellspacing="0" align="center" class="center_text">
+				   <tbody>
+					 <tr>
+					   <td rowspan="2" width="96"><div><strong>Уровень   сложности</strong></div></td>
+					   <td rowspan="2" width="73"><div><strong>Жизнь   нейтралов</strong></div></td>
+					   <td rowspan="2" width="71"><div><strong>Опыт за   сражения</strong></div></td>
+					   <td colspan="2" width="96"><div><strong>Золото</strong></div></td>
+					   <td colspan="2" width="96"><div><strong>Кристаллы</strong></div></td>
+					   <td colspan="2" width="108"><div><strong>Коррупция</strong></div></td>
+					   <td rowspan="2" width="84"><div><strong>Количество   очков</strong></div></td>
+					 </tr>
+					 <tr>
+					   <td width="48"><div><strong>доход</strong></div></td>
+					   <td width="48"><div><strong>старт</strong></div></td>
+					   <td width="48"><div><strong>доход</strong></div></td>
+					   <td width="48"><div><strong>старт</strong></div></td>
+					   <td width="60"><div><strong>макс</strong></div></td>
+					   <td width="48"><div><strong>пров</strong></div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Начинающий</strong></div></td>
+					   <td width="73"><div>55%</div></td>
+					   <td width="71"><div>130%</div></td>
+					   <td width="48"><div>+15</div></td>
+					   <td width="48"><div>1000</div></td>
+					   <td width="48"><div>+5</div></td>
+					   <td width="48"><div>100</div></td>
+					   <td width="60"><div>54%</div></td>
+					   <td width="48"><div>20</div></td>
+					   <td width="84"><div>25%</div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Опытный</strong></div></td>
+					   <td width="73"><div>70%</div></td>
+					   <td width="71"><div>120%</div></td>
+					   <td width="48"><div>+10</div></td>
+					   <td width="48"><div>850</div></td>
+					   <td width="48"><div>+3</div></td>
+					   <td width="48"><div>85</div></td>
+					   <td width="60"><div>60%</div></td>
+					   <td width="48"><div>18</div></td>
+					   <td width="84"><div>50%</div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Знающий</strong></div></td>
+					   <td width="73"><div>85%</div></td>
+					   <td width="71"><div>110%</div></td>
+					   <td width="48"><div>+5</div></td>
+					   <td width="48"><div>700</div></td>
+					   <td width="48"><div>+1</div></td>
+					   <td width="48"><div>70</div></td>
+					   <td width="60"><div>66%</div></td>
+					   <td width="48"><div>16</div></td>
+					   <td width="84"><div>75%</div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Эксперт</strong></div></td>
+					   <td width="73"><div>100%</div></td>
+					   <td width="71"><div>100%</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>600</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>55</div></td>
+					   <td width="60"><div>72%</div></td>
+					   <td width="48"><div>14</div></td>
+					   <td width="84"><div>100%</div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Мастер</strong></div></td>
+					   <td width="73"><div>115%</div></td>
+					   <td width="71"><div>90%</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>500</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>40</div></td>
+					   <td width="60"><div>78%</div></td>
+					   <td width="48"><div>12</div></td>
+					   <td width="84"><div>125%</div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Повелитель</strong></div></td>
+					   <td width="73"><div>130%</div></td>
+					   <td width="71"><div>80%</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>500</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>30</div></td>
+					   <td width="60"><div>84%</div></td>
+					   <td width="48"><div>10</div></td>
+					   <td width="84"><div>150%</div></td>
+					 </tr>
+					 <tr>
+					   <td width="96"><div><strong>Властелин</strong></div></td>
+					   <td width="73"><div>145%</div></td>
+					   <td width="71"><div>70%</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>500</div></td>
+					   <td width="48"><div>-</div></td>
+					   <td width="48"><div>20</div></td>
+					   <td width="60"><div>90%</div></td>
+					   <td width="48"><div>8</div></td>
+					   <td width="84"><div>175%</div></td>
+					 </tr>
+				   </tbody>
+				 </table><br>
+				 <table border="0" align="center" width="560">
+				   <tbody><tr>
+					 <td align="center">
+					 <p class="niceheader"><a name="2"></a>Провинции</p>
+					  <div style="width:495px">
+					   <p align="center"><a name="Level_p"></a>В зависимости от количества жителей различают 11 уровней провинций:<br><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="500" class="center_text">
+						 <tbody><tr>
+						   <td width="40"><div><b><a href="#p1">Уровень про-винции</a></b></div></td>
+						   <td width="180"><div><b>Название</b></div></td>
+						   <td width="140"><div><b>Максимальное количество жителей</b></div></td>
+						   <td width="70"><div><b><a href="#p2">Модифи-катор дохода</a></b></div></td>
+						   <td width="90"><div><b><a href="#p3">Иссле-довано</a></b></div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>1</div></td>
+						   <td width="180"><div>Проклятая земля</div></td>
+						   <td width="140"><div>-10</div></td>
+						   <td width="70"><div>-100%</div></td>
+						   <td width="90"><div>0%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>2</div></td>
+						   <td width="180"><div>Мёртвая земля</div></td>
+						   <td width="140"><div>0</div></td>
+						   <td width="70"><div>-100%</div></td>
+						   <td width="90"><div>0%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>3</div></td>
+						   <td width="180"><div>Новые земли</div></td>
+						   <td width="140"><div>100</div></td>
+						   <td width="70"><div>0%</div></td>
+						   <td width="90"><div>0%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>4</div></td>
+						   <td width="180"><div>Освоенные земли</div></td>
+						   <td width="140"><div>250</div></td>
+						   <td width="70"><div>10%</div></td>
+						   <td width="90"><div>20%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>5</div></td>
+						   <td width="180"><div>Небольшое поселение</div></td>
+						   <td width="140"><div>500</div></td>
+						   <td width="70"><div>20%</div></td>
+						   <td width="90"><div>25%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>6</div></td>
+						   <td width="180"><div>Деревня</div></td>
+						   <td width="140"><div>1000</div></td>
+						   <td width="70"><div>30%</div></td>
+						   <td width="90"><div>30%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>7</div></td>
+						   <td width="180"><div>Село</div></td>
+						   <td width="140"><div>2000</div></td>
+						   <td width="70"><div>50%</div></td>
+						   <td width="90"><div>40%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>8</div></td>
+						   <td width="180"><div>Большая деревня</div></td>
+						   <td width="140"><div>4000</div></td>
+						   <td width="70"><div>70%</div></td>
+						   <td width="90"><div>50%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>9</div></td>
+						   <td width="180"><div>Небольшой город</div></td>
+						   <td width="140"><div>8000</div></td>
+						   <td width="70"><div>90%</div></td>
+						   <td width="90"><div>60%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>10</div></td>
+						   <td width="180"><div>Город</div></td>
+						   <td width="140"><div>15000</div></td>
+						   <td width="70"><div>120%</div></td>
+						   <td width="90"><div>70%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>11</div></td>
+						   <td width="180"><div>Большой город</div></td>
+						   <td width="140"><div>30000</div></td>
+						   <td width="70"><div>150%</div></td>
+						   <td width="90"><div>70%</div></td>
+						 </tr>
+						</tbody></table><br>
+					   <div style="width:495px">
+						<p align="justify"><b><i>Примечания</i></b>:<br>
+						1. <a name="p1"></a>Номер уровня провинции подставляется в формулы для вычисления эффектов некоторых ритуалов (например, <a href="rituals.html#3">Зачарованный ларец</a>).<br>
+						2. <a name="p2"></a>Модификатор дохода зависит от типа земель. Технически там несколько сложнее, чем простое перемножение и сложение.<br>
+						3. <a name="p3"></a>"Исследовано" - процент исследованных территорий, необходимый, чтобы в провинции данного уровня дальше росло население.<br><br>
+						Настроение жителей влияет на доход с провинции, скорость прироста и скорость накопления/уменьшения недовольства. Настроение изменяется дискретно. Возможны состояния:<br><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="190" class="center_text">
+						 <tbody><tr>
+						   <td width="40"><div>-5</div></td>
+						   <td width="150"><div>Полны ненависти</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>-4</div></td>
+						   <td width="150"><div>В ярости</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>-3</div></td>
+						   <td width="150"><div>Возмущены</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>-2</div></td>
+						   <td width="150"><div>Очень недовольны</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>-1</div></td>
+						   <td width="150"><div>Недовольны</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>0</div></td>
+						   <td width="150"><div>Спокойны</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>+1</div></td>
+						   <td width="150"><div>Довольны</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>+2</div></td>
+						   <td width="150"><div>Очень довольны</div></td>
+						 </tr>
+						 <tr>
+						   <td width="40"><div>+3</div></td>
+						   <td width="150"><div>Счастливы</div></td>
+						 </tr>
+					   </tbody></table>
+					 </td>
+				   </tr>
+				 </tbody></table><br>
+				 <table border="0" align="center" width="560">
+				   <tbody><tr>
+					 <td align="center">
+					<p class="niceheader"><a name="3"></a>Урон от заклинаний</p>
+					  <div style="width:495px">
+					   <p align="justify">У большинства заклинаний есть скрытые 
+						характеристики - "множитель силы мага" (<b>PowerMod</b>) и "множитель сопротивления 
+						цели" (<b>ResistPower</b>).<br><br>Точная формула урона от заклинаний выглядит так:<br>
+						<b>TotalDamage = MagAttak + MagAttak/5 - Random(2*(MagAttak/5) + 1) - TotalResist*ResistPower</b> ,<br>
+						или в приближенном виде:<br>
+						<b>TotalDamage = MagAttak * random(0.8; 1.2) - TotalResist*ResistPower</b> ,<br> где <br>
+						<b>MagAttak = BaseDamage + Power * PowerMod</b>;<br>
+						<b>BaseDamage</b> - базовый урон заклинания (из таблички ниже), он же отображается в описании заклинания;<br>
+						<b>Power</b> - величина умения "<a href="heroes.html#k_15">Сила мага</a>" героя, применяющего заклинание;<br>
+						<b>PowerMod</b> - модификатор "<a href="heroes.html#k_15">Силы мага</a>" для этого заклинания (см. табличку ниже);<br>
+						<b>TotalResist</b> - результирующее сопротивление цели (зависит от параметра "Сопротивление" цели и "<a href="heroes.html#84">Преодоление сопротивления</a>" 
+						героя, применяющего заклинание). Формула:<br>
+						&nbsp;<b>TotalResist = Resist - ResistPierce</b> ,<br>
+						&nbsp; &nbsp;где <b>Resist</b> - величина параметра "Сопротивление"	цели;<br>
+						&nbsp; &nbsp;<b>ResistPierce</b> - величина умения "<a href="heroes.html#84">Преодоление сопротивления</a>" у героя, применяющего заклинание.<br>
+						&nbsp; &nbsp;<b>TotalResist</b> не может стать меньше 0 (в этом случае приравнивается нулю).<br>
+						<b>ResistPower</b> - модификатор "Сопротивления" цели для этого заклинания (см. табличку ниже);<br>
+						<a name="random"></a><b>random(x; y)</b> - случайное число в интервале от x до y.</p>
+						<p align="center"><b>Табличка "ударных" заклинаний:</b><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="560" class="center_text">
+						 <tbody><tr>
+						   <td width="150"><div><b>Заклинание</b></div></td>
+						   <td width="30"><div><b>Круг</b></div></td>
+						   <td width="60"><div><b>Power<br>Mod</b></div></td>
+						   <td width="90"><div><b>ResistPower</b></div></td>
+						   <td width="140"><div><b>BaseDamage</b></div></td>
+						   <td width="90"><div><b>Радиус</b></div></td>
+						 </tr>
+								 <tr>
+						   <td width="150"><div><a href="spells.html#1">Магическая искра</a></div></td>
+						   <td width="30"><div>0</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>4 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#2">Усталость</a></div></td>
+						   <td width="30"><div>0</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>5 (Выносливость)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#4">Тройное лезвие</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>0.7</div></td>
+						   <td width="90"><div>1 (защита)</div></td>
+						   <td width="120"><div>9 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#13">Страх</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>6 (Боевой дух)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#20">Сожжение снарядов</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>6 (Жизнь и снаряды)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#22">Молния</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>9 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#23">Взрыв</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>7 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#32">Каменный дождь</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1 (защита)</div></td>
+						   <td width="120"><div>5 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#38">Экзорцизм</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>16 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#41">Кислота</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5 (защита)</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#44">Пламя Хаоса</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>2</div></td>
+						   <td width="120"><div>20 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#57">Похищение жизни</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#58">Белая магия</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>9 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#63">Облако Ужаса</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>10 (Боевой дух)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#64">Армагеддон</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>3</div></td>
+						   <td width="90"><div>2</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#65">Испепеление</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>3</div></td>
+						   <td width="90"><div>2</div></td>
+						   <td width="120"><div>30 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#66">Огненная буря</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1.5</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#68">Чёрная магия</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>13 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#78">Знак Аард</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0.2</div></td>
+						   <td width="120"><div>8 (Выносливость)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#79">Знак Игни</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0.25</div></td>
+						   <td width="120"><div>8 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#86">Огненный взрыв</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>7 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#90">Нечестивое слово</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1.5</div></td>
+						   <td width="120"><div>13 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#97">Астральный вор</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>0.2</div></td>
+						   <td width="120"><div>3 (Снаряды)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#100">Руна распада</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>8 (Жизнь и снаряды)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#103">Каменные шипы</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>3 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#106">Огненная ярость</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>6 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#116">Гейзер</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#123">Ледяная глыба</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5 (защита)</div></td>
+						   <td width="120"><div>12 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#127">Зачарованная стрела</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1 (защита)</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#130">Искры</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>6 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#131">Электрошок</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>18 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#132">Шторм</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>16 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#135">Капкан</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>4 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#136">Силок</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>5 (Выносливость)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#140">Пожирание</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#142">Развеять чары</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#151">Святое слово</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#152">Божественная месть</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#155">Огненный шторм</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#156">Ледяная молния</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>20 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#159">Небесный гром</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>12 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#160">Цепь молний</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#164">Землетрясение</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>0.5 (защита)</div></td>
+						   <td width="120"><div>12 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#165">Огненный дождь</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#167">Очищающее пламя</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>12 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#173">Гимн Проклятых</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>16 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#179">Смертный страх</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>20 (Боевой дух)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#180">Паника</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>8 (Боевой дух)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#187">Насмешка</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0.01</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>2 (Выносливость)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#191">Вопль Баньши</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>2 (Боевой дух)<br>4 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#201">Тёмное опустошение</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>8 (Жизнь и снаряды)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#212">Дезинтеграция</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>50 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#214">Глас Смерти</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>12 (Выносливость)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#218">Призрачный клинок</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0.5 (защита)</div></td>
+						   <td width="120"><div>12 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#226">Знак Аксий</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0.25</div></td>
+						   <td width="120"><div>8 (Боевой дух)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#228">Ледяной шторм</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#231">Массовое осушение</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>5 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#232">Кровь демонов</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#239">Адский огонь</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>0.01</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#240">Вулкан</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>1.5</div></td>
+						   <td width="90"><div>1.5</div></td>
+						   <td width="120"><div>10 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#246">Обессиливание</a></div></td>
+						   <td width="30"><div>2</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1.5</div></td>
+						   <td width="120"><div>5 (Выносливость)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#250">Жуть</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>14 (Боевой дух)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#251">Прах Смерти</a></div></td>
+						   <td width="30"><div>4</div></td>
+						   <td width="80"><div>1.5</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>20 (Жизнь)</div></td>
+						   <td width="90"><div>Область (2)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#254">Ледяная змея</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>30 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#255">Шаровая молния</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>20 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#256">Раскалённая почва</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>9 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#257">Солнечный взрыв</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#261">Демонический вой</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>4 (Боевой дух)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#268">Изгнание</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#270">Чудо</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>1</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>12 (Жизнь)</div></td>
+						   <td width="90"><div>Область (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#271">Волшебный поток</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>15 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#278">Приступ боли</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>3 (Боевой дух)<br>3 (Жизнь)<br>3 (Выносливость)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#299">Рывок</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>-0.5</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>6 (Боевой дух)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#300">Шок</a></div></td>
+						   <td width="30"><div>1</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>0.5</div></td>
+						   <td width="120"><div>3 (Жизнь)</div></td>
+						   <td width="90"><div>Цель</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#316">Ярость небес</a></div></td>
+						   <td width="30"><div>3</div></td>
+						   <td width="80"><div>0.5</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>5 (Жизнь)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#352">Шутка Бездны</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>2</div></td>
+						   <td width="90"><div>1</div></td>
+						   <td width="120"><div>7 (Жизнь)</div></td>
+						   <td width="90"><div>Область вокруг (1)</div></td>
+						 </tr>
+						 <tr>
+						   <td width="150"><div><a href="spells.html#356">Инфернальный вой</a></div></td>
+						   <td width="30"><div>5</div></td>
+						   <td width="80"><div>0</div></td>
+						   <td width="90"><div>0</div></td>
+						   <td width="120"><div>4 (Боевой дух)</div></td>
+						   <td width="90"><div>Все</div></td>
+						 </tr>
+ 						 </tbody></table><br>
+					    <div style="width:495px">
+						<p align="justify"><b><i>Примечания</i></b>:<br>
+						1. Для большинства заклинаний единичка "<a href="heroes.html#k_15">Силы мага</a>" 
+						увеличивает урон на 1, но для некоторых больше или меньше. Например, для "<a href="spells.html#65">Испепеления</a>" - на 3 
+						за единичку "<a href="heroes.html#k_15">Силы мага</a>".<br>
+						2. Высокоуровневые заклинания прямого урона очень 
+						чувствительны к "Сопротивлению" цели. Например, "<a href="spells.html#44">Пламя Хаоса</a>" снижает урон 
+						на 2 единички за каждую единичку "Сопротивления". Поэтому умение 
+						<a href="heroes.html#k_18">Тавматургия</a> очень полезно магу, нацеленному на прямой урон.<br>
+						3. Некоторые заклинания (например, "<a href="spells.html#32">Каменный дождь</a>") используют Защиту цели вместо Сопротивления.<br></p></div>
+					 </td>
+				   </tr>
+				 </tbody></table><br>
+				 <table border="0" align="center" width="560">
+				   <tbody><tr>
+					 <td align="center">
+						<p class="niceheader"><a name="4"></a>Боевой дух</p>
+					  <div style="width:495px">
+					   <p align="justify">
+						 Есть базовое и текущее значение Боевого духа.<br>
+						 Базовое - зависит от воина, бонусов/штрафов, от мировоззрения других существ в отряде и мировоззрения игрока. У героев - повышается от умений, предметов и параметра <a href="heroes.html#Health">Здоровье</a>. У воинов может повышаться при повышении уровня и от умений <a href="heroes.html#3">героя-командира</a>.<br>
+						 Текущее значение Боевого духа напрямую влияет на значения атак (Атака, Контратака, Дистанционная атака): даёт процентный бонус к значениям атак (если Боевой дух больше либо равен 16); даёт процентный штраф к значениям атак (если Боевой дух меньше или равен 5).<br>
+						 Точная зависимость атак от Боевого духа следующая: <br>
+						 1) Если Боевой дух меньше или равен 5, то к значениям всех атак применяется множитель равный 0.4 + 0.1*БоевойДух,<br>
+						 или в виде таблицы:<br><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="190" class="center_text">
+						 <tbody><tr>
+						   <td width="100"><div><b>Боевой дух</b></div></td>
+						   <td width="90"><div><b>Множитель</b></div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>5</div></td>
+						   <td width="90"><div>0,9</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>4</div></td>
+						   <td width="90"><div>0,8</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>3</div></td>
+						   <td width="90"><div>0,7</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>2</div></td>
+						   <td width="90"><div>0,6</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>1</div></td>
+						   <td width="90"><div>0,5</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>0</div></td>
+						   <td width="90"><div>0,4 + Паника</div></td>
+						 </tr>
+					   </tbody></table><br>
+					   <div style="width:495px">
+						<p align="justify">Например, если у воина базовая Атака равна 10, то при Боевом духе равном 0 она упадёт до значения равного 0.4 * 10 = 4.<br><br>
+						 2) Если Боевой дух больше или равен 16, то к значениям всех атак применяется множитель, определяемый следующей таблицей:<br><br></p></div>
+					   <table border="1" cellpadding="0" cellspacing="0" align="center" width="190" class="center_text">
+						 <tbody><tr>
+						   <td width="100"><div><b>Боевой дух</b></div></td>
+						   <td width="90"><div><b>Множитель</b></div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>16-17</div></td>
+						   <td width="90"><div>1,05</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>18-20</div></td>
+						   <td width="90"><div>1,10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>21-24</div></td>
+						   <td width="90"><div>1,15</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>25-29</div></td>
+						   <td width="90"><div>1,20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>30-35</div></td>
+						   <td width="90"><div>1,25</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>36-42</div></td>
+						   <td width="90"><div>1,30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>43-50</div></td>
+						   <td width="90"><div>1,35</div></td>
+						 </tr>
+						 <tr>
+						   <td colspan="2"><div> и так далее </div></td>
+						 </tr>
+					   </tbody></table><br>
+					   <div style="width:495px">
+						<p align="justify">То есть, за 2 единицы Боевого духа после 15 даётся +5% бонус к атакам, за следующие 3 единицы - +10% бонус, за следующие 4 - +15% бонус и т.д.<br><br>
+						 Текущее значение Боевого духа изменяется и в бою, и на карте. При найме воина/героя оно равно базовому значению.<br>
+						 В течение боя Боевой дух воина (и героя) изменяется в случаях:<br>
+						   +1, если воин убил врага врукопашную или дистанционно;<br>
+						   +0, если воин убил врага заклинанием;<br>
+						   +1, если умер враг на соседней с воином клетке;<br> 
+						   -1, если убили союзника, стоящего на соседней с воином клетке (у убитого не должно быть скрытой абилки №254, которая предотвращает падение духа у соседних союзников, - это, например, <a href="upgrades.html#525">тотемы</a>); <br>
+						   -1, если воину нанесена серьёзная рана; серьёзная рана - это когда воину за один удар наносится урон &gt;15% максимального здоровья (или больше 5 единиц) за один удар, урон от эффектов (яда, горения и т.д.) не считается;<br>
+						   - если у воина не хватает Выносливости на действие, то нехватающее для действия количество Выносливости вычитается из текущего Боевого духа;<br>
+						   - если на воина применили заклинание/умение, обладающее эффектом понижения/повышения Боевого духа;<br>
+						   - если у воина есть умение <a href="upgrades.html#652">Жажда крови</a>(Х), то, убив противника рукопашной атакой, воин получает +Х Боевого духа. При убийстве противника контратакой или выстрелом воин получит только половину этого значения (Х/2, округление вниз до целого);<br>
+						   - <a href="upgrades.html#70">Оглушающий удар</a>, <a href="upgrades.html#641">Оглушающий выстрел</a> и <a href="upgrades.html#726">Удар щитом</a> отнимают единицу боевого духа, когда у цели заканчивается выносливость;<br>
+						   - <a href="upgrades.html#508">Удар в спину</a> увеличивает у атакующего боевой дух на 1;<br>
+						   - <a href="upgrades.html#74">Кража снарядов</a> при успешной краже снижает боевой дух цели на количество украденных снарядов.<br><br>
+						 При смерти героя (у игрока или ИИ) Боевой дух дополнительно изменяется:<br>
+						   - смерть героя у ИИ снижает Боевой дух всех воинов ИИ на 1 и увеличивает Боевой дух всех воинов (и героя) у игрока на 1;<br> 
+						   - смерть героя у игрока - то же самое, но если герой имеет подкласс "<a href="heroes.html#3">командир</a>" - то Боевой дух дополнительно снижается на 5, а у врагов дополнительно повышается на 2 (если класс первичный), или снижается на 4/повышается на 2 (если класс вторичный); если герой имеет класс "командир-командир" (<a href="heroes.html#hero15">Генерал</a>), то, соответственно, -10 у своих и +5 у врагов.<br><br>
+						 Смерть воинов отряда (не призванных) под руководством героя может приводить к дополнительному снижению его Боевого духа. Вероятность этого тем выше, чем светлее карма игрока. Также смерть воинов вражеского отряда повышает Боевой дух <a href="heroes.html#3">героя-командира</a>.<span style="color: red">*</span><br><br>
+						 Если Боевой дух становится равным 0, то воин впадает в панику - пропускает ходы (но на удары врагов отвечает), убегает от врага, может дезертировать с поля боя, если дойдёт до "своего" края поля боя. Дезертиры останутся живы, но потеряют половину оставшихся единиц жизни. Ваши воины, сбежавшие с поля боя, останутся живы только в случае победы.
+						 Существует активное (через кнопку интерфейса) умение <a href="upgrades.html#277">Паника</a>, позволяющее воину пробежать с увеличенной скоростью в сторону "своего" края поля боя вплоть до полного сбегания из боя (при применении этого умения Боевой дух воина снижается на 1). Через несколько ходов паника проходит - воин получает +1 Боевого духа.<br><br>В конце боя Боевой дух каждого воина (и героя) ограничивается сверху значением равным базовому значению (т.е. превышение Боевого духа сбрасывается) .<br><br>
+						 На карте текущий Боевой дух воина изменяется на 1 в сторону базового Боевого духа (то есть, если текущий больше базового, то -1, если текущий меньше базового, то +1) в случаях:<br>
+						 - сразу же после боя;<br>
+						 - за каждые 2 хода на карте без боя.<br><br>
+						 <b><i>Исключения</i></b>: <br>
+						 - Если воин обладает умением <a href="upgrades.html#49">Неустрашимый</a>, то его Боевой дух не снижается, но растёт вдвое слабее. <br>
+						 - Если на воина наложен эффект <a href="upgrades.html#95">Боевое безумие</a>, то текущий Боевой дух воина восстанавливается до базового значения (если был меньше) и на воина перестают действовать все эффекты, влияющие на Боевой дух (как положительные, так и отрицательные).<br><br>
+						 <b><i>Примечания</i></b>:<br>
+						 - В окне характеристик на карте Атака, Контратака, Дистанционная Атака у воина (героя) отображаются без учёта Боевого духа. В бою - с учётом Боевого духа.<br>
+						 - Сначала к Атаке применяются "плюсуемые" бонусы - от умений, предметов, заклинаний, а потом уже "умножаемые" (от Боевого духа и прочие). Поэтому, например, воину-герою плюсуемые бонусы к Атаке реально дают больше, чем указывается в их описании.<br>
+						 <br><span style="color: red">*</span> - точные цифры не разглашаются, если кто знает - просьба отписаться на форуме.</p></div>
+					 </td>
+				   </tr>
+				 </tbody></table><br>
+				 <table border="0" align="center" width="560">
+				   <tbody><tr>
+					 <td align="center">
+						<p class="niceheader"><a name="5"></a>Выносливость</p>
+					  <div style="width:495px">
+					   <p align="justify">
+						 Есть базовое и текущее значение Выносливости.<br>
+						 После каждого боя текущая Выносливость восстанавливается до базового значения. <br>
+						 В бою текущая Выносливость изменяется следующим образом: <br>
+						 - -2 за каждую атаку (рукопашная, выстрел, но не Лечение и применение заклинания), если воин перед атакой прошёл одну или несколько клеток; <br>
+						 - -1 за каждую атаку, если воин атаковал, не сдвигаясь с места; <br>
+						 - понижается с применением заклинания (на сколько понижается - написано в описании заклинания; умение <a href="upgrades.html#706">Умелый заклинатель</a>(Х) уменьшает затраты выносливости на применение заклинания на Х, вплоть до 0); <br>
+						 - +(2+бонус) за каждый пропуск хода (когда воин стоит на месте и ничего не делает). Бонус задаётся умением существа "<a href="upgrades.html#51">Восстановление сил</a>". Если воин находится под эффектом "Зуд" (абилка №249), то бонус = 0, независимо от <a href="upgrades.html#51">Восстановления сил</a>;<br>
+						 - +(2+бонус) за выполнение команды Отдых. При выполнении этой команды воин дополнительно не будет отвечать на атаки врагов. Бонус также задаётся умением существа "<a href="upgrades.html#51">Восстановление сил</a>". Если воин находится под эффектом "Зуд" (абилка №249), то бонус = 0, независимо от <a href="upgrades.html#51">Восстановления сил</a>;<br>
+						 - -1 за каждую пройденную клетку с холмами или болотами (за исключением случая, когда у воина есть умение <a href="upgrades.html#593">Знание холмов</a>/<a href="upgrades.html#595">Знание болот</a>); <br>
+						 - -1 за каждую пройденную клетку, если Скорость эффектами снижена до 0 или ниже; <br>
+						 - понижается за каждое передвижение на одну или несколько клеток (учитывается сам факт передвижения, не важно на сколько клеток) у воинов с умением <a href="upgrades.html#168">Тяжёлая броня</a> (на величину умения);<br>
+						 - если на воина применили заклинание/умение, обладающее эффектом понижения/повышения Выносливости; <br>
+						 - если воин применил умение, требующее определённых затрат Выносливости (такое как <a href="upgrades.html#108">Круговая атака</a>); в этом случае тратится на 1 Выносливость больше, чем написано в описании умения (она тратится за факт атаки);<br>
+						 - повышается в начале каждого хода у воинов, обладающих умением <a href="upgrades.html#629">Прилив сил</a> (на величину умения).<br><br>
+						 Если текущая Выносливость становится меньше или равна 5, то воин начинает получать процентный штраф к значениям всех атак и Скорости. <br>
+						 Если текущая Выносливость воина становится равной 0, то воин в свой следующий ход принудительно выполняет команду Отдых (пропускает ход и не отвечает на атаки), кроме того, его Защита и Защита от выстрела уменьшаются в 2 раза (т.е. применяется множитель к защитам равный 0.5), также <a href="upgrades.html#70">Оглушающий удар</a>, <a href="upgrades.html#641">Оглушающий выстрел</a> и <a href="upgrades.html#726">Удар щитом</a> противником дополнительно отнимают единицу боевого духа. <br><br>
+						 Если Выносливость меньше или равна 5, то к значениям всех атак применяется множитель равный 0.4 + 0.1*Выносливость; а Скорость уменьшается на 1, если Выносливость равна 3 или 4, и на 2, если Выносливость меньше или равна 2. Скорость не может стать меньше 1. <br>
+						 В виде таблицы:<br><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="440" class="center_text">
+						 <tbody><tr>
+						   <td width="110"><div><b>Выносливость</b></div></td>
+						   <td width="110"><div><b>Множитель Атаки</b></div></td>
+						   <td width="110"><div><b>Штраф Скорости</b></div></td>
+						   <td width="110"><div><b>Множитель Защиты</b></div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>5</div></td>
+						   <td width="90"><div>0,9</div></td>
+						   <td width="90"><div>-0</div></td>
+						   <td width="90"><div>1,0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>4</div></td>
+						   <td width="90"><div>0,8</div></td>
+						   <td width="90"><div>-1</div></td>
+						   <td width="90"><div>1,0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>3</div></td>
+						   <td width="90"><div>0,7</div></td>
+						   <td width="90"><div>-1</div></td>
+						   <td width="90"><div>1,0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>2</div></td>
+						   <td width="90"><div>0,6</div></td>
+						   <td width="90"><div>-2</div></td>
+						   <td width="90"><div>1,0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>1</div></td>
+						   <td width="90"><div>0,5</div></td>
+						   <td width="90"><div>-2</div></td>
+						   <td width="90"><div>1,0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="100"><div>0</div></td>
+						   <td width="90"><div>0,4</div></td>
+						   <td width="90"><div>-2</div></td>
+						   <td width="90"><div>0,5 + Отдых</div></td>
+						 </tr>
+					   </tbody></table><br>
+					   <div style="width:495px">
+						<p align="justify"><b><i>Исключения</i></b>:<br>
+						 - Если воин обладает умением <a href="upgrades.html#48">Неутомимый</a> (нежить, различные механизмы, некоторые артефакты для героя) - его текущая Выносливость не уменьшается ни за какие действия.<br>
+						 - Воины с умениями <a href="upgrades.html#44">Летающий</a> и <a href="upgrades.html#45">Низколетающий</a> не тратят Выносливость для преодоления холмов, лесов и болот.</p></div>
+					 </td>
+				   </tr>
+				 </tbody></table><br>
+				 <table border="0" align="center" width="560">
+				   <tbody><tr>
+					 <td align="center">
+					 <p class="niceheader"><a name="6"></a>Тяжёлые ранения</p>
+					  <div style="width:495px">
+					   <p align="justify">
+						 Если текущая Жизнь воина становится меньше 50% от базового значения, то к значениям всех атакам воина применяется множитель равный 0.5 + ТекущееЗдоровье/БазовоеЗдоровье.<br>
+						 Или, в виде таблицы:<br><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="140" class="center_text">
+						 <tbody><tr>
+						   <td width="50"><div><b>Жизнь</b></div></td>
+						   <td width="90"><div><b>Множитель</b></div></td>
+						 </tr>
+						 <tr>
+						   <td width="50"><div>50%</div></td>
+						   <td width="90"><div>1,0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="50"><div>40%</div></td>
+						   <td width="90"><div>0,9</div></td>
+						 </tr>
+						 <tr>
+						   <td width="50"><div>30%</div></td>
+						   <td width="90"><div>0,8</div></td>
+						 </tr>
+						 <tr>
+						   <td width="50"><div>20%</div></td>
+						   <td width="90"><div>0,7</div></td>
+						 </tr>
+						 <tr>
+						   <td width="50"><div>10%</div></td>
+						   <td width="90"><div>0,6</div></td>
+						 </tr>
+						 <tr>
+						   <td width="50"><div>~0%</div></td>
+						   <td width="90"><div>~0,5</div></td>
+						 </tr>
+					   </tbody></table><br>
+					   <div style="width:495px">
+						<p align="justify"><b><i>Исключения</i></b>:<br>
+						 - Воины, обладающие умением <a href="upgrades.html#386">Не чувствует боли</a> не получают штрафной множитель к значениям атак от низкого значения Жизни.<br>
+						 - Если на воина наложен эффект <a href="upgrades.html#93">Боевое безумие</a>, то штрафной множитель к значениям атак от низкого значения Жизни не применяется.<br><br>
+						 <b><i>Примечание</i></b>:<br>
+						 Все множители к атакам от Выносливости, Боевого духа и Ранений перемножаются. Формула: <br>
+						 <b>ТекущаяАтака = (БазоваяАтака + ПлюсуемыеБонусы) * StaminaMod * MoraleMod * WoundMod</b> ,<br>
+						 где <b>БазоваяАтака</b> - базовое значение одной из атак воина (Атака, Контратака, Дистанционная Атака); <br>
+						 <b>ПлюсуемыеБонусы</b> - бонусы к атакам от умений/предметов/заклинаний, в описании которых написано, что "увеличивает/уменьшает атаку на X" (таких большинство); <br>
+						 <b>StaminaMod</b> - множитель к атакам от Выносливости; <br>
+						 <b>MoraleMod</b> - множитель к атакам от Боевого духа; <br>
+						 <b>WoundMod</b> - множитель к атакам от Ранений. </p></div>
+					 </td>
+				   </tr>
+				 </tbody></table><br>
+				 <table border="0" align="center" width="560">
+				   <tbody><tr>
+					 <td align="center">
+					 <p class="niceheader"><a name="7"></a>Расчёт урона при атаках</p>
+					  <div style="width:495px">
+					   <p align="justify"><b><u>Точная формула</u></b><br>
+						 Сначала вычисляется итоговая атака цели с учётом случайного разброса:<br>
+						 Если <b>Атака</b> &gt;= 5:<br>
+						 &nbsp; <b>ИтоговаяАтака = Атака + Атака/5 - Random(2 * (Атака/5) + 1)</b>;<br>
+						 Если <b>Атака</b> &lt; 5:<br>
+						 &nbsp; <b>ИтоговаяАтака = Атака + 1 - Random(3)</b>,<br>
+						   где <b>Атака</b> - текущее значение Атаки/Контратаки/Дист.Атаки атакущего (с учётом всех умений и навыков воина);<br>
+						 <b>Random(x)</b> - целое случайное число в интервале [0; x-1];<br> все операции деления в формуле являются целочисленными и сразу округляются вниз.<br><br>
+						 <b>ИтоговаяАтака</b> не может стать меньше 1 (в этом случае становится равной 1). Исключение - если у воина есть умение "<a href="upgrades.html#68">Не сражается</a>"; в этом случае атака, контратака и дистанционная атака равна нулю, и воин не может атаковать и контратаковать.<br><br>
+						 Затем вычисляется урон:<br>
+						 &nbsp; <b>Урон = ИтоговаяАтака - Защита</b>,<br>
+						   где <b>Защита</b> - итоговое значение Защиты/Защиты от выстрела/Сопротивления обороняющегося (с учётом всех умений и навыков), не может быть меньше 0 (в этом случае становится равной 0).<br><br>
+						 То есть, если <b>Атака</b> &lt; 5, то она варьируется в интервале [Атака-1; Атака+1]; если атака &gt;= 5, то в интервале [Атака - Атака/5; Атака + Атака/5]. После этого из полученного значения <b>Атаки</b> вычитается <b>Защита</b> цели.<br><br>
+						 <b><u>"Отрицательный" урон</u></b><br>
+						 Если после вычислений по приведённым выше формулам <b>Урон</b> становится меньше или равен 0 (но не меньше -9), то всё равно существует определённая вероятность нанести урон = 1, если будет выполнено условие:<br>
+						  &nbsp; <b>Random(20 + Урон) &gt;= 10</b>,<br>
+						   где <b>Урон</b> - урон (отрицательное значение, поэтому перед ним знак "+"), вычисленный по приведённой выше формуле;<br>
+						  <b>Random(x)</b> - целое случайное число в интервале [0; x-1].<br>
+						 Из этого условия можно вывести вероятность нанесения единицы урона:<br>
+						   &nbsp; <b>Вероятность = (1 - 10 / (20 + Урон)) * 100%</b><br>
+						 или в виде таблицы:<br><br></p></div>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="170" class="center_text">
+						 <tbody><tr>
+						   <td width="60"><div><b>Урон</b></div></td>
+						   <td width="110"><div><b>Вероятность</b></div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>0</div></td>
+						   <td width="110"><div>50%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–1</div></td>
+						   <td width="110"><div>47%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–2</div></td>
+						   <td width="110"><div>44%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–3</div></td>
+						   <td width="110"><div>41%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–4</div></td>
+						   <td width="110"><div>38%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–5</div></td>
+						   <td width="110"><div>33%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–6</div></td>
+						   <td width="110"><div>29%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–7</div></td>
+						   <td width="110"><div>23%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–8</div></td>
+						   <td width="110"><div>17%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>–9</div></td>
+						   <td width="110"><div>9%</div></td>
+						 </tr>
+						 <tr>
+						   <td width="60"><div>&lt;=–10</div></td>
+						   <td width="110"><div>0%</div></td>
+						 </tr>
+					   </tbody></table><br>
+					  <div style="width:495px">
+					   <p align="justify">
+						 <b><u>Упрощённая формула</u></b> (более наглядная, но есть небольшое отклонение результатов):<br>
+						  &nbsp; <b>Урон = Атака * Random(0.8; 1.2) - Защита</b>,<br>
+						   где <b>Random(x; y)</b> - случайное число в интервале от x до y.<br>
+						 Результат округляется вниз до целого. Если урон получается меньшим либо равным 0 - то наносится единица урона с вероятностью, приведённой в таблице выше.<br><br>
+						 <b><u>Упрощённое описание формулы расчёта урона</u></b><br>
+						 При нанесении урона текущая Атака атакующего изменяется на +/-20% и из неё вычитается Защита цели. <br>
+						 Если полученное значение &gt;= 1 - наносится урон, равный этому значению. <br>
+						 Если полученное значение &lt;=–10, то урон не наносится.<br> Если полученное значение &lt;= 0, но &gt; –10, то наносится урон = 1 с определённой вероятностью - при значении 0 существует вероятность = 50%, при -5 - вероятность 33%, при -9 - 10%.<br><br><br>
+						 <b><u>Влияние различных умений на расчёт урона</u></b><br>
+						 Далее используются сокращения:<br>
+						  A - атакующий;<br>
+						  D - обороняющийся (цель атакующего).<br><br>
+						  <b>Общие правила</b><br>
+						  - Если у D есть умение <a href="upgrades.html#46">Первый удар</a>, а у A нет умения <a href="upgrades.html#46">Первый удар</a>, то D первым наносит урон.<br><br>
+						  - Если у A есть умение <a href="upgrades.html#103">Сокрушение Зла</a>(X), то против воинов с кармой &lt; 0 (Беспринципный = –1, Злой = –2, Исчадие Зла = –3) Атака воина A увеличивается на значение равное X * abs(КармаD). <br>
+						   (Например, при <a href="upgrades.html#103">Сокрушении Зла</a>(2) против воина с кармой -3 Атака A будет увеличена на 2 * abs(-3) = 6).<br> Аналогично действует <a href="upgrades.html#570">Тёмное превосходство</a>(X), только для воинов с положительной кармой.<br><br>
+						  - Если у A есть умение <a href="upgrades.html#680">Охотник на нежить</a>(X) или <a href="upgrades.html#682">Охотник на демонов</a>(X), то против нежити или демонов соответственно Атака воина A увеличивается на значение равное X * Ранг_НежитиD или X * Ранг_ДемонаD соответственно. <br>
+						   (Например, при <a href="upgrades.html#680">Охотнике на нежить</a>(3) против <a href="units.html#64">Вампира</a> (Ранг=4) Атака A будет увеличена на 3 * 4 = 12).<br><br>
+						  - Если у D есть умение <a href="upgrades.html#267">Броня веры</a>(X), а A является нежитью или демоном, то урон будет уменьшен на X%.<br><br>
+						  - Значения атаки/контратаки/защиты воинов (A и D) пересчитываются в момент перед ответным ударом (например, если после удара A жизнь D упала до значения меньшего 50%, то его контратака будет снижена в момент ответного удара).<br><br>
+						  <b>Эффекты от умений ближнего боя</b><br>
+						  - Если A атакует умением <a href="upgrades.html#89">Сокрушающий удар</a>, то его Атака увеличивается на значение равное Атака/2 (округление вниз до целого).<br><br>
+						   - Если у A есть умение <a href="upgrades.html#57">Магический удар</a>, то вместо Защиты воина D берётся его Сопротивление. Кроме того, на урон воина A в этом случае не влияют умения <a href="upgrades.html#127">Точный Удар</a>, <a href="upgrades.html#69">Бронебойный Удар</a> и <a href="upgrades.html#83">Парирование</a> (но учитываются <a href="upgrades.html#149">Контроль энергий</a> и <a href="upgrades.html#628">Неодолимая сила</a>).<br><br>
+						   - Умение <a href="upgrades.html#69">Бронебойный удар</a> (<a href="upgrades.html#628">Неодолимая сила</a> при наличии <a href="upgrades.html#57">Магического удара</a>) уменьшает при расчёте урона Защиту (Сопротивление, соответственно) врага в 2 раза (округление вниз). Умение работает как при атаках, так и при контратаках воина.<br><br>
+						   - Умение <a href="upgrades.html#127">Точный удар</a>(X) (<a href="upgrades.html#149">Контроль энергий</a>(X) при наличии <a href="upgrades.html#57">Магического удара</a>) уменьшает при расчёте урона Защиту (Сопротивление, соответственно) врага на X (но не меньше 0). Умение работает только при атаках (при контратаках не работает).<br><br>
+						   - Умение воина <a href="upgrades.html#83">Парирование</a>(X) увеличивает Защиту воина на X при первой атаке в текущем раунде против этого воина. Умение не защищает от контратак врагов. Умение не работает, если Выносливость воина равна 0, или он обездвижен каким-либо эффектом.<br><br>
+						   - Если у воина A есть умение <a href="upgrades.html#56">Ловкость</a>, а у воина D - умение <a href="upgrades.html#83">Парирование</a>, то умение <a href="upgrades.html#83">Парирование</a> "сработает" против удара A.<br><br>
+						   - Если у воина A есть <a href="upgrades.html#69">Бронейбойный удар</a> и <a href="upgrades.html#127">Точный удар</a>, а у воина D - <a href="upgrades.html#83">Парирование</a>, то порядок срабатывания умений следующий: <a href="upgrades.html#69">Бронебойный удар</a>, <a href="upgrades.html#83">Парирование</a>, <a href="upgrades.html#127">Точный удар</a>.<br><br>
+						   - Урон от умения <a href="upgrades.html#650">Зачарованный клинок</a>(X) добавляется в конце атаки, он равен значению (X - СопротивлениеЦели) (урон не может быть меньше 0). При наличии <a href="upgrades.html#57">Магического удара</a> урон от умения полностью складывается с магическим ударом - общий урон становится равным (А + X - СопротивлениеЦели).<br><br>
+						   - Умение <a href="upgrades.html#67">Атака с разгона</a>(Р) применяется в самом конце, после всех расчётов урона, и добавляет +Р повреждений за каждую клетку между атакующим и целью (перед началом атаки), если у цели нет умения <a href="upgrades.html#731">Стена копий</a>, а сама цель не является <a href="upgrades.html#552">бестелесной</a>. При значении Р=3 и выше позволяет стоптать цель атаки, если у неё не осталось здоровья.
+							(Точнее, там немного неправильно вычисляется количествово клеток между A и D. Получается отклонение от нужного в ту или иную сторону на 1 и более.<br>
+							 Урон от умения считается как abs(XA - XD) + abs (YA - YD) - 2, где X и Y - координаты воинов A и D на поле боя перед атакой - от 0 до 7 каждая; координата 0,0 - это верхний левый угол поля боя).<br><br>
+						   - Умение <a href="upgrades.html#508">Удар в спину</a>(X) применяется в самом конце, после всех расчётов урона, и добавляет +X повреждений, если с противоположной от воина стороны врага находится дружественный воин (кроме юнитов с подтипами "Ловушка" и "Преграда").<br><br>
+						   - Скрытая абилка с индексом 229 обнуляет при расчёте урона Защиту (Сопротивление при <a href="upgrades.html#57">Магическом ударе</a>) врага при ударе в спину. Умение работает как при атаках, так и при контратаках воина. Наличие умения <a href="upgrades.html#508">Удар в спину</a> не обязательно.<br><br>
+						   - Умение <a href="upgrades.html#105">Затаптывание</a>(X) не применяется при контратаке. Оно применяется при атаке, в случае если после нанесения урона у D осталось жизни меньше, чем X.<br><br><br>
+						   <b>Эффекты от дистанционных умений</b><br>
+						  - Если A атакует умением <a href="upgrades.html#698">Мощный выстрел</a>, то его Атака увеличивается на значение равное Атака/2 (округление вниз до целого).<br><br>
+						   - Если у A есть умение <a href="upgrades.html#58">Магический выстрел</a>, то вместо Защиты D берётся его Сопротивление. Кроме того, на урон воина A в этом случае не влияют умения <a href="upgrades.html#128">Точный выстрел</a> и <a href="upgrades.html#47">Бронебойный выстрел</a> (но учитываются <a href="upgrades.html#149">Контроль энергий</a> и <a href="upgrades.html#628">Неодолимая сила</a>).<br><br>
+						   - Умение <a href="upgrades.html#128">Точный выстрел</a>(X) (<a href="upgrades.html#149">Контроль энергий</a>(X) при наличии <a href="upgrades.html#58">Магического выстрела</a>) уменьшает при расчёте урона Защиту от выстрела (Сопротивление, соответственно) врага на X (но не меньше 0).<br><br>
+						   - Умение <a href="upgrades.html#47">Бронебойный выстрел</a> (<a href="upgrades.html#628">Неодолимая сила</a> при наличии <a href="upgrades.html#58">Магического выстрела</a>) уменьшает при расчёте урона Защиту от выстрела (Сопротивление, соответственно) врага в 2 раза (округление вниз).<br><br>
+						   - Если у воина A есть умения <a href="upgrades.html#47">Бронейбойный выстрел</a> и <a href="upgrades.html#128">Точный выстрел</a>, то порядок срабатывания умений такой: <a href="upgrades.html#47">Бронебойный выстрел</a>, <a href="upgrades.html#128">Точный выстрел</a>.<br><br>
+						   - Урон от умения <a href="upgrades.html#90">Зачарованные стрелы</a>(X) добавляется в конце атаки, он равен значению (X - СопротивлениеЦели) (урон не может быть меньше 0). При наличии <a href="upgrades.html#58">Магического выстрела</a> урон от умения полностью складывается с магическим выстрелом - общий урон становится равным (А + X - СопротивлениеЦели).<br><br>
+						   - При наличии умения <a href="upgrades.html#50">Дополнительный выстрел</a>(X) урон и эффекты от обоих выстрелов рассчитываются отдельно. У воина вычитается X дополнительной Выносливости (+1 за факт атаки с места). Выносливость уменьшается после второго выстрела.
+						   (Следует иметь в виду, что при этом не работает <a href="upgrades.html#47">Бронейбойный выстрел</a>, а <a href="upgrades.html#128">Точный выстрел</a> воина считается вдвое меньшим; плюс ещё есть умение <a href="upgrades.html#601">Дополнительный выстрел</a> с индексом 160, которое разрешает действовать <a href="upgrades.html#47">Бронебойному выстрелу</a>).
+						<br></p></div>
+					 </td>
+				   </tr>
+				 </tbody></table><br>
+				 
+				 <p class="niceheader"><a name="8"></a>Опыт за бой</p>
+				 <div style="width:495px">
+				 <p align="justify">
+				<br>
+				Общий принцип получения опыта за бой - расcчитывается суммарный опыт за убитую вражескую армию, затем он делится между героем и юнитами армии-победителя.<br><br>
+				<span style="font-weight: bold">Общий опыт за вражескую армию:</span><br>
+				Опыт за одного вражеского юнита:<br>
+				 EnemyUnitExp = TableExp * (1 + 0.1 * Level), где<br>
+				TableExp - базовое значение опыта, даваемое за убийство юнита <br>
+				Level - уровень убитого юнита.<br><br>
+				<span style="font-weight: bold">Опыт за вражеского героя</span>:<br>
+				EnemyHeroExp = 10 * Level, где<br>
+				Level - уровень вражеского героя. Если вражеского героя нет - EnemyHeroExp = 0.<br><br>
+				<span style="font-weight: bold">Общий опыт за вражескую армию рассчитывается по формуле</span>:<br>
+				EnemyArmyExp = (EnemyHeroExp + (EnemyUnitExp1 + EnemyUnitExp2 + ... EnemyUnitExpN)) * (1 + HeroArmyBonus/100)<br>
+				, тут EnemyHeroExp - опыт за вражеского героя (из формулы выше);<br>
+				EnemyUnitExpi - опыт за вражеского юнита;<br>
+				HeroArmyBonus - бонус = X от навыка "<a href="heroes.html#92">Опыт войскам</a>(X)" "нашего" героя (применяется только если герой жив на момент окончания боя).<br><br>
+				Считается опыт и за призыванных по время боя вражеских юнитов, а также за убийство юнита, имеющего любой тип возрождения, например, перерождающиеся на поле боя посредством "<a href="spells.html#43">Тёмного пакта</a>" или через способность с индексом 191 "Возрождение" (т.е. суммарно за убийство и первоначального существа, и впоследствии возродившегося).<br><br>
+				То есть, опыт за вражескую армию равен суммарному опыту за героя и каждого юнита. Опыт за юнита зависит от его базового табличного значения и увеличивается на 10% за каждый уровень юнита, опыт за героя = 10 единиц за каждый его уровень. Если у героя есть навык "<a href="heroes.html#92">Опыт войскам</a>(X)", то суммарный опыт увеличивается на X%.<br><br><br>
+				<span style="font-weight: bold">Распределение опыта между героем и юнитами</span><br>
+				Опыт делится между юнитами и героем победившей армии следующим образом:<br>
+				-&nbsp;40% опыта даётся напрямую герою;<br>
+				-&nbsp;24% опыта делится между участвующими в бою, в том числе не пережившим его. Но герой тут не учитывается, равно как и все призванные существа;<br>
+				-&nbsp;36% опыта делится между всеми существами в армии в зависимости от "набитых фрагов" (наносил/получал урон, стрелял etc). Герой тут уже учитывается, но призванные существа по-прежнему исключены.<br><br>
+				Таким образом, герой-солист будет терять примерно четверть опыта впустую, если не имеет армии.<br><br>
+				Если героя вообще нет в армии (охрана провинции или гарнизон), то опыт распределяется так: 40% - делится поровну, 60% - делится в зависимости от активности (формулы во 2 и 3 подразделах ниже будут использовать коэффициенты 0.4 и 0.6 вместо 0.24 и 0.36).<br><br>
+				По достижении 30-го уровня герои перестают получать те 40% опыта, которые даются напрямую; его "законные" 40% идут в общую копилку и распределяются как в предыдущем пункте: 40% - делится поровну, 60% - делится в зависимости от активности.<br><br>
+				<span style="font-weight: bold">Опыт для героя</span><br>
+				 HeroExp = 0.4 * EnemyArmyExp * (1 + HeroSelfBonus/100)<br>
+				, тут EnemyArmyExp - суммарный опыт за вражескую армию;<br>
+				HeroSelfBonus - бонус = X от умения "Опыт героя(X)" героя.<br><br>
+				Опыт добавляется герою даже если он мёртв на момент окончания боя (но его уровень в этот момент повышен не будет, повысится после следующего боя).<br><br>
+				<span style="font-weight: bold">Опыт поровну на всех</span><br>
+				Распределяется поровну между всеми юнитами (включая убитых), кроме героя и призванных существ - назовём их "считаемыми". Точнее, распределение зависит от того, сколько раундов провёл юнит в бою <B>живым</B> (и не важно - как именно эти раунды он провёл - стоял на месте или проявлял активность).<br><br>
+				Сначала считается общее число туров, которые провели все "считаемые" юниты в бою:<br>
+				 TotalUnitTurns = UnitTurns1 + UnitTurns2 + ... + UnitTurnsN<br>
+				, где UnitTurnsi - кол-во раундов, которые провёл юнит i в бою.<br><br>
+				Затем даётся опыт каждому "считаемому" юниту:<br>
+				 UnitExp = 0.24 * EnemyArmyExp * (UnitTurns / TotalUnitTurns)<br>
+				, тут EnemyArmyExp - суммарный опыт за вражескую армию;<br>
+				UnitTurns - кол-во раундов, которые провёл юнит в бою <B>живым</B>;<br>
+				TotalUnitTurns - общее кол-во раундов, которые провели все юниты и герой в этом бою.<br><br>
+				То есть, если все юниты выжили до конца боя, то они получат равные части от 24% общего опыта. Если юнит был убит - он получит меньше опыта, чем остальные.<br><br>
+				<span style="font-weight: bold">Опыт в зависимости от активности</span><br>
+				Распределяется между всеми юнитами (исключая призванных) и героем, включая убитых, в зависимости от их "рейтинга активности" в бою.<br><br>
+				<span style="font-weight: bold">Рейтинг активности каждого юнита вычисляется по формуле:</span><br>
+				 UnitActRating = 20*MeleeKills + 10*RangedKills + 2*MeleeDamage + RangedDamage + DamageReceived + 3*SpellsStamina + 2*UsedHealing + UsedStamina + 1<br>
+				, тут <br>
+				MeleeKills - количество врагов, убитых юнитом в ближнем бою;<br>
+				RangedKills - количество врагов, убитых юнитом стрелковыми атаками (включая стрелковые с магическим уроном);<br>
+				MeleeDamage - суммарный урон, нанесённый юнитом в ближнем бою;<br>
+				RangedDamage - суммарный урон, нанесённый юнитом дистанционными атаками;<br>
+				DamageReceived - суммарный урон, который был нанесён юниту в бою;<br>
+				SpellsStamina - кол-во Выносливости, потраченной юнитом на применение заклинаний;<br>
+				UsedHealing - суммарное здоровье, восстановленное юнитом Целительством;<br>
+				UsedStamina - израсходованная юнитом в бою Выносливость.<br><br>
+				Затем считается общий рейтинг всех юнитов (включая героя и убитых) по формуле:<br>
+				 TotalActRating = UnitActRating1 + UnitActRating2 + ... UnitActRatingN<br>
+				, тут UnitActRatingi - рейтинг активности юнита/героя в бою, расчитанный по формуле выше.<br><br>
+				Затем даётся опыт каждому юниту (включая убитых и героя):<br>
+				 UnitActExp = 0.36 * EnemyArmyExp * (UnitActRating/TotalActRating)<br>
+				, тут EnemyArmyExp - суммарный опыт за вражескую армию;<br>
+				UnitActRating - рейтинг активности юнита/героя в бою;<br>
+				TotalActRating - суммарный рейтинг активности всей армии.<br><br>
+				То есть, герой и все юниты делят оставшиеся 36% опыта в зависимости от нанесённого ими урона, кол-ва убитых врагов (ближний бой ценится в 2 раза больше дальнего; за убитых дают приличный бонус), полученного урона и прочей активности в бою. Юнит получает часть опыта в зависимости от своей "активности" на фоне общей "активности".<br><br>
+				<span style="font-weight: bold">Итоговый опыт</span><br>
+				В итоге, герою даётся суммарный опыт, полученный с 2-х частей "дележа": индивидуальный и поделённый с армией в зависимости от рейтинга активности.<br><br>
+				<span style="text-decoration: underline">Убитый герой получает опыт по тем же правилам, но его уровень будет повышен не сразу, а после следующего победного боя.</span><br><br>
+				Выжившему юниту даётся суммарный опыт с 2-х частей: поделённый поровну с армией, поделённый с армией в зависимости от рейтинга активности.<br><br>
+				Убитым юнитам опыт даётся по тем же правилам, что и "выжившим", но этот опыт "сгорает", в итоге "выжившие" получают меньше опыта.<br><br>
+				Призванные юниты в распределении опыта не участвуют.<br><br>
+				</p>
+				<b style="font-size:18px"><a name="9"></a>Таблица необходимого юниту опыта для получения уровня</b>
+				<p align="justify">
+				<span style="font-weight: bold">Кол-во опыта, нужного для получения уровня N</span> с уровня N-1 равно 10 * (N+1) * ExpMod/100.<br>
+				Тут ExpMod - "модификатор опыта", скорость роста необходимого для уровня опыта - значение из странички юнитов (страница - <a href="units.html">там</a>);<br>
+				Ниже, в виде таблицы, суммарное значение опыта, необходимое для получения уровня N начиная с 0-го для юнитов с ExpMod=100:<br>
+				</p>
+				<pre>
+Ур. Опыт      Ур. Опыт      Ур. Опыт
+1.   20       11. 770       21. 2520
+2.   50       12. 900       22. 2750
+3.   90       13. 1040      23. 2990
+4.   140      14. 1190      24. 3240
+5.   200      15. 1350      25. 3500
+6.   270      16. 1520      26. 3770
+7.   350      17. 1700      27. 4050
+8.   440      18. 1890      28. 4340
+9.   540      19. 2090      29. 4640
+10.  650      20. 2300      30. 4950
+				</pre>
+				<p align="justify">
+				То есть, юниту для достижения 1-го уровня нужно 20 опыта, а для каждого следующего - на 10 больше, чем для предыдущего. Таблица опыта "растягивается" в зависимости от ExpMod: при ExpMod = 100 - нужно 100% от указанного опыта, при ExpMod = 200 - 200% от указанного опыта и т.д.<br><br>
+				</p>
+				<b style="font-size:18px"><a name="10"></a>Таблица необходимого герою опыта для получения уровня</b>
+				<p align="justify">
+					<span style="font-weight: bold">Базовая таблица опыта</span> формируется так (без учёта уровня сложности и ExpMod):<br>
+					Для перехода с 0 на 1 уровень надо 40 опыта.<br>
+					С 1 по 10 уровень - чтобы перейти на уровень N с N-1 надо на 30 опыта больше, чем надо с уровня N-2 на N-1.<br>
+					с 11 по 20 уровень - на 60 больше.<br>
+					с 20 по 30 уровень - на 90 больше.<br><br>
+					<span style="font-weight: bold">Точная формула для опыта</span>, необходимого для следующего уровня (жутковатая):<br>
+					 ExpToNext = 10 * (3 + 3 * floor((PrevLevel + 1) / 10)))<br>
+					, тут PrevLevel - номер предыдущего уровня;<br>
+					floor(x) - округление x вниз до целого.<br><br>
+					В итоге, таблица базового опыта выглядит так:<br>
+				</p>
+					<pre>
+Ур. Опыт    Ур. Опыт    Ур. Опыт
+1.     40   11.  2120   21.  9150
+2.    110   12.  2550   22. 10240
+3.    210   13.  3040   23. 11420
+4.    340   14.  3590   24. 12690
+5.    500   15.  4200   25. 14050
+6.    690   16.  4870   26. 15500
+7.    910   17.  5600   27. 17040
+8.   1160   18.  6390   28. 18670
+9.   1440   19.  7240   29. 20390
+10.  1750   20.  8150   30. 22200
+					</pre>
+					<p align="justify">
+					Эта таблица "растягивается" в зависимости от уровня сложности игры - необходимый для получения уровня опыт увеличивается на 80% + Сложность * 10%. <br>
+					Тут Сложность = 0 для Начинающий, =1 для Опытный, =2 для Знающий, =3 для Эксперт и т.д.<br>
+					</p>
+				</div>
+				 
+				<p class="niceheader"><a name="11"></a>Медали юнитов</p>
+				<div style="width:495px">
+				<b style="font-size:18px">Общее</b><br>
+				<p align="justify">
+				Всего может быть 3 медали у юнита. Для получения медали нужно, чтобы выполнились все условия в списке "Условия получения". За один бой юнит может получить только одну медаль. Юниты с типом "Нежить", "Механизм", "Животное" и "Стихийный дух" не могут получить медаль.
+				Те медали, которые выше по списку, получаются с большим приоритетом (если сработали все условия сразу для нескольких медалей, то юнит получит ту, которая выше в списке).<br><br>
+				Часть условий выполняются с определённой вероятностью - такие условия содержат функцию Random(x). <br>
+				Функция Random(x) возвращает целое случайное число в диапазоне [0; x-1].<br><br>
+				Большинство условий содержат общие термины:<br>
+				 MeleeKills - количество врагов, убитых юнитом в ближнем бою;<br>
+				 RangedKills - количество врагов, убитых юнитом стрелковыми атаками (включая стрелково-магические);<br>
+				 MeleeDamage - суммарный урон, нанесённый юнитом в ближнем бою;<br>
+				 RangedDamage - суммарный урон, нанесённый юнитом дистанционными атаками;<br>
+				 Attack - значение Атаки юнита перед боем (без бонусов от героя и боевого духа);<br>
+				 CounterAttack - значение Контратаки юнита перед боем (без бонусов от героя и боевого духа);<br>
+				 RangedAttack - значение Дистанционной атаки юнита перед боем (без бонусов от героя и боевого духа).<br><br>
+				</p>
+				
+				<b style="font-size:18px">Некоторые упрощения</b><br>
+				<p align="justify">
+				Если условие содержит выражение:<br>
+				 Random(x) &gt;= y<br>
+				то вероятность его выполнения (вероятность получения медали) будет вычисляться по формуле:<br>
+				 Вероятность% = (1-y/x) * 100%<br>
+				<br>
+				Большинство "вероятностных" условий получения медалей содержат выражения вида:<br>
+				 Random(21 + A) &gt;= 20<br>
+				В этом случае вероятность выполнения условия в зависимости от значения A можно представить в виде таблицы:<br>
+				</p>
+				<pre>
+A   Вер%
+0    5
+1    9
+2   13
+3   17
+4   20
+5   23
+10  35
+15  44
+20  51
+25  57
+30  61
+50  72
+				</pre>
+				<br>
+				<b style="font-size:18px">Список медалей<br><br>
+				<span style="color: red">Внимание: только для оригинальной игры!<br>В моде "Новые Горизонты" медали и условия их получения изменены!</span></b><br>
+				<p align="justify">
+				<br>
+					<span style="font-weight: bold"><a name="medal8"></a>Крест Героя</span><br><br>
+					<span style="font-style: italic">Бонус: Атака/Контратака +2, Защита/Защита от выстрела/Сопротивление +1</span><br>
+					Содержание: 10 зол<br><br>
+					Условия получения:<br>
+					   MeleeKills + RangedKills &gt; 4<br>
+					   DamageReceived &gt;= MaxLife * 2 / 3<br>
+					   Random(11 + MeleeKills + RangedKills) &gt;= 13<br>
+					Упрощённое описание:<br>
+					 Юнит может получить медаль, если он убивает минимум 5 врагов в бою и получает урона не менее чем на 2/3 максимального количества жизней. Вероятность получения, в зависимости от количества убитых:<br>
+					  Kills Вер%<br>
+					   5    19<br>
+					   6    24<br>
+					   7    28<br>
+					   8    32<br>
+					   9    35<br>
+					   10   38<br>
+					   16   52<br>
+					   20   58<br><br><br>
+					<span style="font-weight: bold"><a name="medal7"></a>Звезда Мага</span><br><br>
+					<span style="font-style: italic">Бонус: Дистанционная атака +1, контроль энергий +1</span><br>
+					Содержание: 5 зол + 1 кр<br><br>
+					Условия получения:<br>
+					   MagicShotAbility &gt; 0<br>
+					   RangedDamage &gt;= 3 * RangedAttack<br>
+					   RangedKills &gt; 1<br>
+					   Random(21 + RangedDamage + 5 * RangedKills - 3 * RangedAttack * Ammos) &gt;= 30<br>
+					   Random(NumMageMedals + 1) == 0<br>
+					 , где Ammos - значение характеристики Запас снарядов юнита перед боем;<br>
+					 MagicShotAbility - значение характеристики Магический выстрел юнита;<br>
+					 NumMageMedals - кол-во "Звёзд Мага" у юнита перед боем.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить юнит-маг, убивший хотя бы одного врага и нанёсший урон, в 3 раза превышающий его дистанционную атаку.<br>
+					 Чем больше нанесённый урон и количество убитых врагов, тем выше вероятность получения медали. <br>
+					 Также вероятность зависит от количества уже полученных этим юнитом медалей "Звезда Мага": при 1 медали вероятность получить медаль меньше в 2 раза, при 2 медалях - в 3 раза.<br><br><br>
+					<span style="font-weight: bold"><a name="medal3"></a>Орден Снайпера</span><br><br>
+					<span style="font-style: italic">Бонус: Дистанционная атака +1, Точный выстрел +1</span><br>
+					Содержание: 8 зол<br><br>
+					Условия получения:<br>
+					   Ammos &gt; 2<br>
+					   MagicShotAbility == 0<br>
+					   RangedDamage &gt;= 3 * RangedAttack<br>
+					   RangedKills &gt; 1<br>
+					   Random(21 + RangedDamage + 5 * RangedKills - 3 * RangedAttack * Ammos) &gt;= 30<br>
+					   Random(NumSniperMedals + 1) == 0<br>
+					 , где Ammos - значение характеристики Запас снарядов юнита перед боем (без бонусов от героя);<br>
+					 MagicShotAbility - значение характеристики Магический выстрел юнита;<br>
+					 NumSniperMedals - кол-во "Орденов Снайпера" у юнита перед боем.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить юнит-стрелок (не маг, не варвар/копейщик), убивший хотя бы одного врага и нанёсший урон, в 3 раза превышающий его дистанционную атаку.<br>
+					 Чем больше нанесённый урон и количество убитых врагов, тем выше вероятность получения медали. <br>
+					 Также вероятность зависит от количества уже полученных этим юнитом медалей "Орден Снайпера": при 1 медали вероятность получить медаль меньше в 2 раза, при 2 медалях - в 3 раза.<br><br>
+					<span style="font-weight: bold"><a name="medal9"></a>Медаль Целителя</span><br><br>
+					<span style="font-style: italic">Бонус: Целительство +2, Запас снарядов +1</span><br>
+					Содержание: 3 зол + 1 кр<br><br>
+					Условия получения:<br>
+					   HealingAbility &gt; 0<br>
+					   HealedLife &gt;= 3 * HealingAbility<br>
+					   Random(21 + HealedLife - HealingAbility * 3) &gt;= 20<br>
+					   Random(NumHealingMedals + 1) == 0<br>
+					 где HealingAbility - значение навыка юнита Целительство;<br>
+					 HealedLife - суммарное здоровье, восстановленное юнитом Целительством;<br>
+					 NumHealingMedals - кол-во "Медалей Целителя" у юнита перед боем.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой целитель, вылечивший кол-во здоровья, в 3 раза превышающее значение его умения Исцеление.<br>
+					 Чем больше излечено здоровья - тем выше вероятность получения медали.<br>
+					 Также вероятность зависит от количества уже полученных этим юнитом медалей "Медаль Целителя": при 1 медали вероятность получить медаль меньше в 2 раза, при 2 медалях - в 3 раза.<br><br><br>
+					<span style="font-weight: bold"><a name="medal4"></a>Орден за Волю к Победе</span><br><br>
+					<span style="font-style: italic">Бонус: Атака/Контратака +2</span><br>
+					Содержание: 5 зол<br><br>
+					Условия получения:<br>
+					   MeleeDamage &gt; 3 * (Attack + CounterAttack)<br>
+					   Random(21 + MeleeDamage - 3 * (Attack + CounterAttack)) &gt;= 20<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, нанёсший суммарный урон, в 3 раза превышающий сумму его Атаки и Контратаки.<br>
+					 Чем больше нанесено урона - тем больше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal2"></a>Медаль за Стойкость</span><br><br>
+					<span style="font-style: italic">Бонус: Жизнь +4, Контратака +1, Защита +1</span><br>
+					Содержание: 4 зол<br><br>
+					Условия получения:<br>
+					   TotalDamageReceived &gt;= MaxLife<br>
+					   MeleeKills + RangedKills &gt; 0<br>
+					   Random(21 + TotalDamageReceived - MaxLife) &gt;= 20<br>
+					 где TotalDamageReceived - суммарный урон, который был нанесён юниту в бою;<br>
+					 MaxLife - максимальное значение характеристики Жизнь юнита.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, получивший в бою урон, превышающий его максимальное значение здоровья.<br>
+					 Чем больше получено урона - тем больше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal10"></a>Орден Победителя</span><br><br>
+					<span style="font-style: italic">Бонус: Жизнь +5, Атака +2, Контратака +1, Боевой дух +3</span><br>
+					Содержание: 10 зол<br><br>
+					Условия получения:<br>
+					   floor(TotalAllies / AliveAllies) &gt; 5<br>
+					   MeleeKills + RangedKills &gt; 0<br>
+					   Random(21 + TotalAllies + MeleeKills + RangedKills) &gt;= 20,<br>
+					 где TotalAllies - всего юнитов в армии на начало боя (считая героя);<br>
+					 AliveAllies - живых юнитов в армии на конце боя (не считая героя);<br>
+					 floor(x) - округление числа x вниз до ближайшего целого.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить юнит, оставшийся в живых в бою, где погибло минимум 80% его армии (например, в армии из 5 юнитов + герой выжил только 1 юнит + герой).<br>
+					 Чем больше врагов убил юнит, и чем больше юнитов было в армии перед боем - тем выше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal13"></a>Медаль за Непоколебимость</span><br><br>
+					<span style="font-style: italic">Бонус: Сопротивление +2, Боевой дух +2</span><br>
+					Содержание: 3 зол<br><br>
+					Условия получения:<br>
+					   SpellDamageReceived &gt; CurrentLife/2<br>
+					   MeleeKills + RangedKills &gt; 0<br>
+					   Random(21 + SpellDamageReceived - CurrentLife/2) &gt;= 20,<br>
+					 где SpellDamageReceived - суммарный урон от заклинаний, который был нанесён юниту в бою (магическо-стрелковые атаки не считаются);<br>
+					 CurrentLife - текущее значение Жизни юнита на конец боя.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, получивший достаточно много урона от заклинаний в бою и убивший хотя бы одного врага.<br>
+					 Чем больше получено урона, и чем меньше осталось жизни у юнита - тем больше вероятность получения медали.<br>
+					 Баг??? Возможно, в реализации этой и двух следующих медалей есть баг - вместо макс. значения Жизни используется текущее значение Жизни. Условие получения смотрелось бы логичнее, если бы уроном определённого вида выбивалось половина жизни.<br><br><br>
+					<span style="font-weight: bold"><a name="medal12"></a>Орден Защитника</span><br><br>
+					<span style="font-style: italic">Бонус: +2 Защита, +1 Контратака</span><br>
+					Содержание: 4 зол<br><br>
+					Условия получения:<br>
+					   MeleeDamageReceived &gt; CurrentLife/2<br>
+					   MeleeKills &gt; 0<br>
+					   Random(21 + MeleeDamageReceived - CurrentLife/2) &gt;= 20,<br>
+					 где MeleeDamageReceived - суммарный урон от атак ближнего боя, который был нанесён юниту в бою;<br>
+					 CurrentLife - текущее значение Жизни юнита на конец боя.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, получивший достаточно много урона в ближнем бою, и убивший в ближнем бою хотя бы одного врага.<br>
+					 Чем больше получено урона и чем меньше осталось жизни у юнита - тем больше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal11"></a>Медаль за Сноровку</span><br><br>
+					<span style="font-style: italic">Бонус: Защита от выстрела +2, Выносливость +2</span><br>
+					Содержание: 3 зол<br><br>
+					Условия получения: <br>
+					   RangedDamageReceived &gt; CurrentLife/2<br>
+					   MeleeKills + RangedKills &gt; 0<br>
+					   Random(21 + RangedDamageReceived - CurrentLife/2) &gt;= 20,<br>
+					 где RangedDamageReceived - суммарный урон от дистанционных атак (включая стрелково-магические), который был нанесён юниту в бою;<br>
+					 CurrentLife - текущее значение Жизни юнита на конец боя.<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, получивший достаточно много урона от дистанционных атак, и убивший хотя бы одного врага.<br>
+					 Чем больше получено урона и чем меньше осталось жизни у юнита - тем больше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal1"></a>Медаль за Отвагу</span><br><br>
+					<span style="font-style: italic">Бонус: Атака +1, Боевой дух +4</span><br>
+					Содержание: 3 зол<br><br>
+					Условия получения:<br>
+					   CurrentMorale - MaxMorale - MapMorale/2 &gt; 5<br>
+					   MeleeKills + RangedKills &gt; 0<br>
+					   Random(21 + CurrentMorale - MaxMorale) &gt;= 30,<br>
+					 где CurrentMorale - значение текущего Боевого духа юнита на конец боя:<br>
+					 MaxMorale - значение максимального Боевоего духа юнита на начало боя (базовое, то есть то, которое пишется как характеристика, а не в виде "синей полоски").<br>
+					 MapMorale - Бонус к боевому духу на глобальной карте<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, набравший боевого духа в бою на 5 и больше выше максимального значения, и убивший хотя бы одного врага.<br>
+					 Чем больше набрано боевого духа выше максимума - тем больше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal5"></a>Медаль за Рвение</span><br><br>
+					<span style="font-style: italic">Бонус: +1 Контратака, +3 Выносливость</span><br>
+					Содержание: 3 зол<br><br>
+					Условия получения: <br>
+					   UsedStamina &gt;= MaxStamina <br>
+					   Random(21 + UsedStamina - MaxStamina) &gt;= 20,<br>
+					 где UsedStamina - израсходованная юнитом в бою Выносливость;<br>
+					 MaxStamina - макс. Выносливость юнита (без учёта бонусов от героя);<br>
+					Упрощённое описание:<br>
+					 Медаль может получить любой юнит, истративший суммарно выносливости больше, чем у него было перед началом боя.<br>
+					 Чем больше выносливости потрачено - тем больше вероятность получения медали.<br><br><br>
+					<span style="font-weight: bold"><a name="medal6"></a>Знак наёмника</span><br><br>
+					<span style="font-style: italic">Бонус: Увеличенная плата +100%</span><br>
+					Содержание: -<br><br>
+					Условия получения: Найм юнита в таверне<br><br>
+					<span style="font-weight: bold"><a name="medal14"></a>Знак чародея </span><br><br>
+					<span style="font-style: italic">Повышает запас выстрелов и выносливость на 2. Плата золота возрастает на 4. Плата кристаллов возрастает на 1.</span><br><br>
+					Условия получения:<br>
+					 SpellsStamina &gt;= 3 <br>
+					 RangedKills &gt; 0 <br>
+					 Random(10 + SpellsStamina + RangedKills) &gt;= 10 <br>
+					 Random(NumBattlemageBadges + 1) == 0 <br><br>
+					Упрощённое описание:<br>
+					Медаль может получить юнит, потративший на использование книги заклинаний не менее 3 выносливости, и убивший хотя бы одного врага в дальнем бою. Чем больше потрачено выносливости и сделано убийств, тем выше шанс.<br>
+					Также вероятность зависит от количества уже полученных этим юнитом медалей "Знак Чародея": при 1 медали вероятность получить медаль меньше в 2 раза, при 2 медалях - в 3 раза.<br><br><br>
+					<span style="font-weight: bold"><a name="medal15"></a>Огненный вымпел </span><br><br>
+					<span style="font-style: italic">Повышает запас выстрелов и сопротивление на 1. Умение огненные стрелы увеличивается на 3. Плата золота возрастает на 7. Плата кристаллов возрастает на 1.</span><br><br>
+					Условия получения:<br>
+					 Ammo &gt; 2 <br>
+					 RangedAttack &gt; 0 <br>
+					 RangedDamage &gt;= RangedAttack * 3 <br>
+					 MagicShot == 0 <br>
+					 RangedKills &gt; 1 <br>
+					 DamageReceived &gt;= MaxLife * 2 / 3 <br>
+					 Random(21 + RangedDamage + 5 * RangedKills - 3 * RangedAttack * Ammo) &gt;= 30 <br>
+					 Random(NumFirePennants + 1) == 0<br><br>
+					Упрощённое описание:<br>
+					Медаль может получить любой юнит с немагической стрелковой атакой и не менее чем тремя снарядами, не включая бонус героя от умений, нанёсший урона не менее чем утроенное значение стрелковой атаки без бонусов героя и морали, совершивший минимум 2 убийства и получивший урон не менее чем на 2/3 здоровья<br>
+					Также вероятность зависит от количества уже полученных этим юнитом медалей "Огненный вымпел": при 1 медали вероятность получить медаль меньше в 2 раза, при 2 медалях - в 3 раза.<br>
+
+				</p>
+				
+				<p class="niceheader"><a name="12"></a>Медали за осколок</p>
+				<p align="justify">
+					X - переменная, зависящая от размера осколка, берётся из shard.var:<br><br>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="160" class="center_text">
+						 <tbody>
+						 <tr>
+						   <td width="120"><div>Маленький</div></td>
+						   <td width="40"><div>6</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Небольшой</div></td>
+						   <td width="40"><div>8</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Средний</div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Крупный</div></td>
+						   <td width="40"><div>12</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Большой</div></td>
+						   <td width="40"><div>14</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Очень большой</div></td>
+						   <td width="40"><div>16</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Огромный</div></td>
+						   <td width="40"><div>18</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Гигантский</div></td>
+						   <td width="40"><div>20</div></td>
+						 </tr>
+					   </tbody></table>
+					   <br>
+					<span style="font-weight: bold">Тактик</span><br>
+					В боях не погибло ни одного юнита (включая героя), и не было ни одного "Возврата в прошлое".<br>
+					Убитые призванные и подчинённые юниты не влияют.<br>
+					Бои без участия наших героев не влияют (охрана провинций точно не влияет, гарнизоны - под вопросом).<br>
+					Если юнит был убит и воскрешён в течение боя - он не считается убитым (но если было поднятие в нежить и всякие тёмные пакты - юнит считается убитым).<br>
+					Одним словом - все юниты, которые были в армии в начале боя должны остаться живыми на конец боя.<br>
+					Слава: 200 * (X - 2) / 8 <br><br>
+					<span style="font-weight: bold">Стратег</span><br>
+					Не было ни одного проигранного боя с участием наших героев, и не было ни одного "Возврата в прошлое".<br>
+					Слава: 100 * (X - 2) / 8 <br><br>
+					<span style="font-weight: bold">Исследователь</span><br>
+					Суммарно всеми героями исследовано &gt; 1000% территорий провинций.<br>
+					Слава: 30<br><br>
+					<span style="font-weight: bold">Картограф</span><br>
+					На глобальной карте отсутствуют "чернильные пятна". Туман войны может присутствовать.<br>
+					Слава: 40 * (X - 2) / 8 <br><br>
+					<span style="font-weight: bold">Архитектор</span><br>
+					В замке построено 125 зданий.<br>
+					Слава: 25<br><br>
+					<span style="font-weight: bold">Охотник на Драконов</span><br>
+					Уничтожено 10 или больше сайтов с охраной, в составе которой есть юнит <a href="units.html#60">Дракон</a> (также, возможно, считаются завоёванные боем провинции со стражей "<a href="defenders.html#50">Дракон</a>").<br>
+					Слава: 40<br><br>
+					<span style="font-weight: bold">Разрушитель</span><br>
+					Награблено &gt; 1000 золота с провинций.<br>
+					Слава: 25<br><br>
+					<span style="font-weight: bold">Коллекционер</span><br>
+					На герое хоть раз в течение игры был надет сет из 4 и более предметов.<br>
+					Слава: 20
+				</p>
+				
+				<p class="niceheader"><a name="13"></a>Цены на ресурсы</p>
+				<p align="justify">
+					Цена на ресурс повышается на 1 за каждые купленные две единицы данного ресурса, причём не играет роли, кто купил - вы или ваш противник (включая ИИ).<br>
+					При починке предметов цены на ресурсы не повышаются.<br>
+					Цены и рынок ресурсов общие для всех игроков.<br>
+					При наличии у игрока данного ресурса, покупать ему этот ресурс уже не нужно.<br><br>
+					Пример повышения цен:<br>
+					Строим <a href="inner_buildings.html#2">Кузницу</a> (1 железо). Цена не изменяется.<br>
+					На следующем ходу строим <a href="inner_buildings.html#26">Литейный цех</a> (3 железа). Цена повышается на 2 (4 железа / 2).<br>
+					Дальше противник строит <a href="inner_buildings.html#11">Школу мечников</a> (2 железа). Цена повышается ещё на 1.<br>
+					Итого суммарно было куплено 6 железа, и цена повысилась на 3 (6 / 2).<br><br>Базовые цены на ресурсы:<br>
+				</p>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="210" class="center_text">
+						 <tbody><tr>
+						   <td width="110"><div><B>Ресурс</B></div></td>
+						   <td width="50"><div><B>Зол.</B></div></td>
+						   <td width="50"><div><B>Кр.</B></div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#1">Железо</a></div></td>
+						   <td width="50"><div>15</div></td>
+						   <td width="50"><div>0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#2">Красное дерево</a></div></td>
+						   <td width="50"><div>10</div></td>
+						   <td width="50"><div>0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#3">Кони</a></div></td>
+						   <td width="50"><div>35</div></td>
+						   <td width="50"><div>0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#4">Мандрагора</a></div></td>
+						   <td width="50"><div>10</div></td>
+						   <td width="50"><div>5</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#5">Арканит</a></div></td>
+						   <td width="50"><div>50</div></td>
+						   <td width="50"><div>20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#6">Мрамор</a></div></td>
+						   <td width="50"><div>110</div></td>
+						   <td width="50"><div>0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#7">Мифрил</a></div></td>
+						   <td width="50"><div>80</div></td>
+						   <td width="50"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#8">Дионий</a></div></td>
+						   <td width="50"><div>600</div></td>
+						   <td width="50"><div>50</div></td>
+						 </tr>
+						 <tr>
+						   <td width="110"><div><a href="resources.html#9">Чёрный лотос</a></div></td>
+						   <td width="50"><div>400</div></td>
+						   <td width="50"><div>100</div></td>
+						 </tr>
+					   </tbody></table>
+				
+				<p class="niceheader"><a name="14"></a>Коррупция</p>
+				<p align="justify">
+					Коррупция вычисляется в 3 этапа:
+					<br>
+					
+					<br>
+					1) Вычисляется общий процент коррупции лорда и отдельных провинций, дополнительно штраф от сложности игры (+2% за уровень) и поправка (-20%) чтобы коррупция начала действовать не сразу.
+					<br>
+					  <span style="font-weight: bold">Коррупция1% = (КоррупцияЛорда + sum(КоррупцияПровинции)) / 10 + 2 * difficulty - 20</span>
+					<br>
+					, где
+					<br>
+					
+					<br>
+					<span style="font-weight: bold">КоррупцияПровинции = (sites_corruption + race_corruption) * (1 + outer_build_bonus / 100)</span>
+					<br>
+					, тут 
+					<br>
+					race_corruption - зависимость от расы, населяющей провинцию:
+					<br>
+				</p>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="140" class="center_text">
+						 <tbody><tr>
+						   <td width="98"><div><a href="races.html#1">Люди</a></div></td>
+						   <td width="42"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#2">Эльфы</a></div></td>
+						   <td width="42"><div>5</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#3">Гномы</a></div></td>
+						   <td width="42"><div>15</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#4">Гоблины</a></div></td>
+						   <td width="42"><div>20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#5">Орки</a></div></td>
+						   <td width="42"><div>8</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#6">Половинчики</a></div></td>
+						   <td width="42"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#7">Кентавры</a></div></td>
+						   <td width="42"><div>0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#8">Людоящеры</a></div></td>
+						   <td width="42"><div>9</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#9">Альвары</a></div></td>
+						   <td width="42"><div>12</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#10">Гноллы</a></div></td>
+						   <td width="42"><div>12</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#11">Алкари</a></div></td>
+						   <td width="42"><div>0</div></td>
+						 </tr>
+						 <tr>
+						   <td width="98"><div><a href="races.html#12">Крысолюды</a></div></td>
+						   <td width="42"><div>13</div></td>
+						 </tr>
+					   </tbody></table>
+				<p align="justify">
+					<br>
+					sites_corruption - зависимость от сайтов в этой провинции:
+					<br><br>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="160" class="center_text">
+						 <tbody><tr>
+						   <td width="120"><div><a href="sites.html#50">Гильдия воров</a></div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+					   </tbody></table>
+					<br>
+					outer_build_bonus - зависимость от зданий, построенных в провинции:
+					<br>
+				</p>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="180" class="center_text">
+						 <tbody>
+						 <tr>
+						   <td width="140"><div><a href="outer_buildings.html#26">Дом наместника</a></div></td>
+						   <td width="40"><div>-30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="outer_buildings.html#27">Дом судьи</a></div></td>
+						   <td width="40"><div>-50</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="outer_buildings.html#28">Управа</a></div></td>
+						   <td width="40"><div>-70</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="outer_buildings.html#29">Сборщик податей</a></div></td>
+						   <td width="40"><div>-100</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="outer_buildings.html#47">Монумент Света</a></div></td>
+						   <td width="40"><div>-100</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="outer_buildings.html#52">Храм</a></div></td>
+						   <td width="40"><div>-50</div></td>
+						 </tr>
+					   </tbody></table>
+				<p align="justify">
+					<br>
+					sum(КоррупцияПровинции) - суммарная коррупция во всех провинциях лорда;
+					<br>
+					
+					<br>
+					КоррупцияЛорда = суммарному эффекту от случайных событий с индексом эффектов 22 (?? + может ещё что-то, например, зависимость от стартовой кармы игрока).
+					<br>
+					
+					<br>
+					difficulty - уровень сложности игры от 0 до 6;
+					<br>
+					
+					<br>
+					
+					<br>
+					2) Коррупция ограничивается сверху процентом, зависящим от уровня сложности (54% + 6% * уровень):
+					<br>
+					  <span style="font-weight: bold">Коррупция2% = min(Коррупция1%; 54 + 6 * difficulty)</span>
+					<br>
+					, тут
+					<br>
+					min(x; y) - равно минимальному из чисел x, y;
+					<br>
+					
+					<br>
+					
+					<br>
+					3) Коррупция уменьшается в зависимости от построек в замке.
+					<br>
+					<span style="font-weight: bold">КоррупцияФинальная% = Коррупция2% * (inner_build_bonus + 100) / 100</span>,
+					<br>
+					, где
+					<br>
+					inner_build_bonus - суммарный бонус от построек в замке (?? или бонус от построек одной линейки = бонусу старшей постройки):
+					<br>
+				</p>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="180" class="center_text">
+						 <tbody>
+						 <tr>
+						   <td width="140"><div><a href="inner_buildings.html#51">Темница</a></div></td>
+						   <td width="40"><div>-10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="inner_buildings.html#105">Суд</a></div></td>
+						   <td width="40"><div>-20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="inner_buildings.html#161">Залы Правосудия</a></div></td>
+						   <td width="40"><div>-20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="inner_buildings.html#164">Эшафот</a></div></td>
+						   <td width="40"><div>-5</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="inner_buildings.html#190">Дворец</a></div></td>
+						   <td width="40"><div>-30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div><a href="inner_buildings.html#274">Небесное око</a> (раса <a href="races.html#11">Алкари</a>)</div></td>
+						   <td width="40"><div>-5</div></td>
+						 </tr>
+					   </tbody></table>
+				<p align="justify">
+					<br>
+					4) В итоге, коррупция увеличивает общий расход золота и кристаллов лорда на процент = КоррупцияФинальная% (?? нужно бы проверить).
+				</p>
+				
+				<p class="niceheader"><a name="15"></a>Износ оружия и брони</p>
+				<p align="justify">
+				- При проведении атаки у героя увеличивается износ оружия на 1, при получении урона от атаки врага - износ брони на 1.<br><br>
+				- Луки и другое оружие дальнего боя в ближнем бою изнашиваются точно так же, как и при стрельбе.<br><br>
+				- При применении умения "<a href="upgrades.html#50">Дополнительный выстрел</a>" износ оружия увеличивается по 1 за каждый выстрел. <br><br>
+				- Если героя атакует юнит с умением "<a href="upgrades.html#82">Повреждение оружия</a>", или сам герой атакует такого юнита в ближнем бою, то износ оружия увеличивается на 2 за каждый удар.<br><br>
+				- Если героя атакует юнит с умением "<a href="upgrades.html#75">Повреждение брони</a>", то износ брони увеличивается дополнительно на 1 за каждый удар.<br><br>
+				- Если героя атакует юнит с умением "<a href="upgrades.html#114">Тяжёлые снаряды</a>", то износ брони увеличивается дополнительно на 1 за каждый выстрел.<br><br>
+				- При смерти героя увеличивается на 5 износ его оружия, и на 5 износ брони.<br><br>
+				- Износ оружия/брони может быть избегнут с вероятностью = значению навыка "<a href="heroes.html#97">Снижение износа предметов</a>" героя. Для каждой единицы износа вероятность проверяется отдельно.<br><br>
+				- При получении единицы износа оружия Прочность оружия в правой руке героя уменьшается на 1. Если в левой руке героя есть стрелы - то их прочность тоже уменьшается на 1. (Вероятность избежать износ "бросается" отдельно для правой и левой руки).<br><br>
+				- При получении единицы износа брони сначала случайным образом выбирается один из целых (Прочность &gt; 0) предметов, надетых на героя. 
+				У предметов на разных частях тела разные "веса" (чем больше "вес", тем больше шанс, что этот предмет будет выбран):<br><br>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="180" class="center_text">
+						 <tbody>
+						 <tr>
+						   <td width="140"><div>Левая рука (кроме стрел)</div></td>
+						   <td width="40"><div>50</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Торс</div></td>
+						   <td width="40"><div>50</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Голова</div></td>
+						   <td width="40"><div>30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Пояс</div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Плащ</div></td>
+						   <td width="40"><div>20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Обувь</div></td>
+						   <td width="40"><div>30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Кисти рук</div></td>
+						   <td width="40"><div>30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="140"><div>Запястье (только с Прочностью&gt;1)</div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+					   </tbody></table>
+				</p>
+				
+				<p class="niceheader"><a name="16"></a>Паника</p>
+				<p align="justify">
+					Если перед наложением эффекта, понижающего боевой дух юнита, его боевой дух был &gt; 0, то Шанс_паники = 50 + 10 * Штраф_БД, и боевой дух юнита становится = 0.<br><br>
+					Если у юнита мораль уже была = 0, то ШансПаники = Шанс_паники + 10 * Штраф_БД, мораль не изменяется.<br><br>
+					Здесь Штраф_БД - значение, на которое боевой дух "уходит в минуса" после наложения эффекта.<br><br>
+					В случае, если боевой дух юнита = 0, то в его ход происходит следующее:<br>
+					- если Шанс_паники &gt;= 50, то юнит гарантированно пропускает ход, и после этого Шанс_паники падает на 10. 
+					Шанс_паники определяет в этом случае вероятность, что юнит будет убегать (иначе юнит "застынет на месте").<br><br>
+					- если Шанс_паники &lt; 50, то юнит пропускает ход с вероятностью = Шанс_паники (точнее - random(100) &lt;= Шанс_паники), и после этого Шанс_паники падает на 10. <br>
+					Если в этом случае "вероятность паники" не сработала, то юнит получает +1 к Боевому духу и Шанс_паники = 0.<br><br>
+					Воины, впавшие в панику, могут дезертировать с поля боя, если дойдут до "своего" края поля боя. Они останутся живы, но потеряют половину оставшихся единиц жизни. Нельзя закончить бой, просто запугав всех врагов - придётся либо уничтожать их, либо пугать до момента, когда они сбегут. Если все враги сбегут - бой будет выигран. Ваши воины, сбежавшие с поля боя, останутся живы только в случае победы.
+				</p>
+				
+				<p class="niceheader"><a name="17"></a>Знание леса/болот/холмов</p>
+				<p align="justify">
+					Кроме отсутствия штрафа к Скорости и Выносливости при передвижении, воин не будет получать штрафы местности к параметрам.<br>Кроме того, Знание местности(X) даёт бонусы:<br>
+					- к Защите от выстрела = 2*(Х-1) - только <a href="upgrades.html#591">Знание леса</a>;<br>
+					- к Защите и Контратаке = 1*(Х-1) - только <a href="upgrades.html#593">Знание холмов</a>;<br>
+					- к Сопротивлению = 1*(Х-1) - только <a href="upgrades.html#595">Знание болот</a>.<br><br>
+
+					Таким образом, <a href="upgrades.html#591">Знание леса</a> увеличивают только защиту от выстрела (если воин на лесном тайле), <a href="upgrades.html#593">Знание холмов</a> - защиту и контратаку (на холмистом тайле), <a href="upgrades.html#595">Знание болот</a> - только сопротивление (на болотном тайле).
+				</p>
+				
+				<p class="niceheader"><a name="18"></a>Лечение</p>
+				<p align="justify">
+					Юнит с умением <a href="upgrades.html#54">Целительство</a>(X) вылечивает за раз [X-1; X+1] единиц жизни. "Пациенты" с типом "Нежить", "Механизм" и "Стихийный дух", а также с умением <a href="upgrades.html#709">Гниющие раны</a> не могут быть исцелены. 
+					Механизмы могут быть исцелены аналогичным лечению умением <a href="upgrades.html#466">Ремонт</a>, которое также позволяет ускорять лечение механизмов вне боя и быстрее восстанавливать укрепления, если юнит с ремонтом будет находиться в гарнизоне на начало дня.<br><br>
+					<B>Восстановление жизни у юнитов/героев между боями:</B><br>Нежить восстанавливает жизнь только отдельными навыками:<br>
+					+10% от макс Жизни в ход за каждый уровень умения героя <a href="heroes.html#k_21">Некромантия</a>.<br>+20% от макс Жизни в ход за каждый уровень навыка героя <a href="heroes.html#136">Зов некроманта</a><br>Если у юнита есть <a href="upgrades.html#97">Регенерация</a> (например, <a href="units.html#92">Мумия</a>), то излечиваются дополнительные 10% здоровья в ход (<B>внимание</B>: юниты излечиваются только в отряде героя; нежить, находящаяся в гарнизоне, отдельно от "хозяина", похоже, сама не лечится никаким способом).<br><br>
+					Далее про не-нежить. <B>Базовое</B>: Восстанавливается 10% от макс Жизни за ход. Округление вниз.<br><br>Дополнительно у героев:<br>+1 Жизни за каждую единицу параметра <a href="heroes.html#Health">Здоровье</a>.<br><br>Дополнительно у юнитов и героев:<br>+2 Жизни за каждую единицу навыка <a href="upgrades.html#97">Регенерация</a>.<br>
+					+1 Жизни за каждую единицу навыка <a href="upgrades.html#65">Первая помощь</a>.<br>+1 Жизни за каждого юнита с навыком <a href="upgrades.html#54">Целительство</a> в отряде, от силы навыка не зависит.<br><br>Дополнительно у юнитов:<br>+(значение умения <a href="upgrades.html#344">Живучесть</a>)% от макс Жизни в ход.<br><br>Дополнительно у механических существ:<br>+1 Жизни за каждого юнита с навыком <a href="upgrades.html#466">Ремонт</a> в отряде, от силы навыка не зависит.<br><br>
+					Если юнит на конец хода находится в гарнизоне (в замке или построенном в провинции укреплении), то он дополнительно вылечит 10% в ход (независимо от того, Застава это или Замок); на воинов, находящихся в отряде героя, это не распространяется.<br><br>Также некоторые постройки в замке и провинциях добавляют свои бонусы:<br>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="220" class="center_text">
+						 <tbody>
+						 <tr>
+						   <td width="180"><div><B>Постройка</B></div></td>
+						   <td width="40"><div><B>%</B></div></td>
+						 </tr>
+						 <tr>
+						   <td colspan="2"><div><B>Замок:</B></div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="inner_buildings.html#49">Лекарня</a></div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="inner_buildings.html#106">Аптека</a></div></td>
+						   <td width="40"><div>20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="inner_buildings.html#114">Гильдия целителей</a></div></td>
+						   <td width="40"><div>30</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="inner_buildings.html#210">Костяной тотем</a> (раса <a href="races.html#8">Людоящеров</a>)</div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="inner_buildings.html#276">Менторий</a> (раса <a href="races.html#11">Алкари</a>)</div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td colspan="2"><div><B>Провинции:</B></div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#24">Лекарня</a></div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#25">Аптека</a></div></td>
+						   <td width="40"><div>20</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#30">Тайный монастырь</a></div></td>
+						   <td width="40"><div>15</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#34">Зачарованный колодец</a></div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#37">Храм Древних</a></div></td>
+						   <td width="40"><div>15</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#40">Хижина шамана</a></div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+						 <tr>
+						   <td width="180"><div><a href="outer_buildings.html#52">Храм</a></div></td>
+						   <td width="40"><div>10</div></td>
+						 </tr>
+					   </tbody></table>
+				</p>
+				
+				<p class="niceheader"><a name="19"></a>Диверсии</p>
+				<p align="justify">
+					Диверсия "Ложная тревога" отнимает Выносливость у всех юнитов в армии врага в кол-ве = 6 + Бонус_Егеря.<br><br>
+					Диверсия "Отравить запасы воды" накладывает эффект "Отравление" на 3 хода с силой = 2 + Бонус_Егеря.<br><br>
+					Диверсия "Устроить панику" отнимает Боевой дух у всех юнитов армии врага в кол-ве = 4 + Бонус_Егеря (не может опустить Боевой дух ниже 1).<br><br>
+					Бонус_Егеря даётся герою класса Разведчик-Маг: на 10-м уровне (<a href="heroes.html#hero12">Егерь</a>) он равен 2, на 20-м (<a href="heroes.html#hero28">Следопыт</a>) - равен 4. 
+					Кроме этого, <a href="heroes.html#hero12">Егерь</a> получает "невидимые" +1 к уровню скилла <a href="heroes.html#k_24">Разведка</a>, а <a href="heroes.html#hero28">Следопыт</a> +2 к уровню скилла <a href="heroes.html#k_24">Разведка</a>, но только для определения доступности и стоимости диверсий; <a href="heroes.html#98">исследование провинций</a>, например, не ускоряется
+					(поэтому <a href="heroes.html#hero12">Егерю</a> становится доступной диверсия "Устроить панику" при 3-м уровне скилла "<a href="heroes.html#k_24">Разведка</a>").<br><br>
+					На силу диверсий не влияет Сопротивление врагов.<br><br>Цена (в золоте) диверсий определяется следующим образом:<br>
+					"Ложная тревога": Цена = 15 + СуммаРангов * 4<br>"Отравить запасы воды": &nbsp;Цена = 20 + СуммаРангов * 5<br>
+					"Ложная тревога": Цена = 30 + СуммаРангов * 6<br>Тут СуммаРангов - сумма рангов всех юнитов вражеской армии, на которых подействует диверсия.<br><br>
+					Если у героя уровень скилла "<a href="heroes.html#k_24">Разведка</a>" = 5, то цена диверсий понижается в 2 раза.<br><br>
+					Проводить диверсию может и защищающийся герой, если его Инициатива выше на 3 и более. Атакующий герой в таком случае диверсий не устраивает даже при наличии возможности.<br>
+				</p>
+				
+				<p class="niceheader"><a name="20"></a>Бонус/штраф от кармы к БД юнитов</p>
+				<p align="justify">
+					Воины со скрытой абилкой №99 (например, с умением "<a href="upgrades.html#596">Снабженец</a>", которое есть у <a href="units.html#260">Осликов</a>) в рассчётах не участвуют. 
+					Также у воинов с умением "<a href="upgrades.html#538">Терпимость</a>" боевой дух не снижается из-за конфликтов мировоззрения с другими членами отряда и Владыкой (но повышаться может).<br><br>
+					Бонус зависит от кармы юнита, кармы юнитов его отряда и кармы правителя.<br><br>
+					БонусКармы от кармы юнитов отряда определяется следующим образом:<br>
+					Если юнит - нейтральный.<br>БонусКармы = Сумма_бонусов_не_нейтральных / (2 * Колво_не_нейтральных). Округление до ближайшего к нулю целого.<br>
+					(По сути - БонусКармы = половине среднего бонуса к морали всех не-нейтральных юнитов отряда).<br><br>
+					Если юнит - не нейтральный.<br>Для юнита X БонусКармы вычисляется так:<br>
+					Если карма всех остальных юнитов отряда по знаку = карме юнита X, то:<br> 
+					&nbsp;- если нет ни одного нейтрального юнита в отряде, то БонусКармы = максимальному по модулю значению кармы среди всех остальных юнитов отряда.<br> 
+					&nbsp;- если есть хоть один нейтральный, то на 1 меньше (на 1 меньше максимального по модулю значению кармы среди всех остальных юнитов отряда).<br>
+					Если карма хоть одного из остальных юнитов противоположна по знаку карме юнита X:<br> 
+					&nbsp;- БонусКармы = -abs(карма) - floor(abs(сумма_противоположных))/3. (Тут abs(x) - значение x по модулю, floor() - округление вниз до целого).<br><br>
+					БонусКармы от кармы правителя определяется так:<br>Если юнит имеет положительную карму и карма правителя &gt;=50, то юнит получает БонусКармы = +1;<br>
+					Если юнит имеет отрицательную карму и карма правителя &lt;=-100, то юнит получает БонусКармы = +1;<br>
+					Если карма правителя не равна по знаку карме юнита: если abs(КармаПравителя) &gt; 250, то БонусКармы = -5, иначе БонусКармы = -abs(КармаПравителя)/50.<br><br>
+					Призванные юниты не влияют на бонусы боевого духа (считаются только те, которые были в начале боя, включая умерших).<br><br><br>Таблица числовых значений кармы правителя:<br>
+				</p>
+						<table border="1" cellpadding="0" cellspacing="0" align="center" width="240" class="center_text">
+						 <tbody>
+						 <tr>
+						   <td width="120"><div><B>Карма</B></div></td>
+						   <td width="120"><div><B>Титул</B></div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Менее -200</div></td>
+						   <td width="120"><div>Ужасный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-199; -150)</div></td>
+						   <td width="120"><div>Кровожадный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-149; -100)</div></td>
+						   <td width="120"><div>Чёрный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-99; -75)</div></td>
+						   <td width="120"><div>Свирепый</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-74; -50)</div></td>
+						   <td width="120"><div>Грозный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-49; -30)</div></td>
+						   <td width="120"><div>Злой</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-29; -20)</div></td>
+						   <td width="120"><div>Коварный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-19; -10)</div></td>
+						   <td width="120"><div>Безжалостный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(-9; 9)</div></td>
+						   <td width="120"><div>-</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(10; 19)</div></td>
+						   <td width="120"><div>Честный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(20; 29)</div></td>
+						   <td width="120"><div>Справедливый</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(30; 49)</div></td>
+						   <td width="120"><div>Милосердный</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(50; 74)</div></td>
+						   <td width="120"><div>Добрый</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(75; 99)</div></td>
+						   <td width="120"><div>Мудрый</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(100; 149)</div></td>
+						   <td width="120"><div>Светлый</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>(150; 199)</div></td>
+						   <td width="120"><div>Великий</div></td>
+						 </tr>
+						 <tr>
+						   <td width="120"><div>Более 200</div></td>
+						   <td width="120"><div>Благословенный</div></td>
+						 </tr>
+					   </tbody></table>
+				<p align="justify">
+					<br>Пример 1.<br>В отряде 1 Разбойник (карма -2), 3 Мечника (карма +1). Правитель имеет карму = 150 (Великий).<br><br>Для Разбойника:<br>От армии: есть юниты с противоположной по знаку кармой: БонусКармы = -abs(-2) - floor(abs(1+1+1))/3 = -3.<br>От правителя: карма правителя противоположна по знаку: БонусКармы = -abs(150)/50 = -3.<br>Итого БонусКармы = -3 + -3 = -6.<br><br>Для каждого из Мечников:<br>От армии: есть юниты с противоположной по знаку кармой: БонусКармы = -abs(1) - abs(-2)/3 = -2.<br>От правителя: карма правителя одинакова по знаку и &gt;=50 - БонусКармы = +1<br>Итого БонусКармы = -2 + 1 = -1.<br><br><br>Пример 2.<br>В отряде 1 Паладин (карма +3), 2 Жреца (карма +2) и 1 Гидра (карма 0). Правитель имеет карма = 50 (Добрый).<br><br>Для Паладина:<br>От армии: нет юнитов с противоположной кармой. Максимальная положительная карма остальных юнитов = +2 (у Жрецов), но есть нейтральные юниты - БонусКармы = +2 - 1 = +1.<br>От правителя: карма правителя одинакова по знаку и &gt;=50 - БонусКармы = +1<br>Итого БонусКармы = +1 + 1 = +2.<br><br>Для Жрецов:<br>От армии: нет юнитов с противоположной кармой. Максимальная положительная карма остальных юнитов = +3 (у Паладина), но есть нейтральные юниты - БонусКармы = +3 - 1 = +2.<br>От правителя: карма правителя одинакова по знаку и &gt;=50 - БонусКармы = +1.<br>Итого БонусКармы = +2 + 1 = +3.<br><br>Для Гидры:<br>От армии: БонусКармы = (+3 + +2 + +2) / (2 * 3) = 1.2, округляем до ближайшего у нулю целого - БонусКармы = +1.<br>От правителя: нейтральным юнитам бонус не даётся. Бонус Кармы = 0.<br>Итого БонусКармы = +1 + 0 = +1.
+				</p>
+				
+				<p class="niceheader"><a name="21"></a>Способности "Мародёр" и "Грабитель"</p>
+				<p align="justify">
+					Способности <a href="upgrades.html#86">Мародёр</a>,  <a href="upgrades.html#88">Грабитель</a>, <a href="upgrades.html#713">Трудоголик</a> и <a href="upgrades.html#712">Ищейка</a> считаются в конце боя и только для выживших бойцов с этой способностью.<br><br>
+					Таким образом, если нанять <a href="units.html#11">разбойников</a>, и они погибнут в бою на том же ходу, то им не достанется ни трофеев, ни денег с провинции.
+				</p>
+				
+				<p class="niceheader"><a name="22"></a>Цвета предметов (раритетность)</p>
+				<p align="justify">
+					Цвет в названии предмета означает его раритетность (редкость).
+					<br>
+					<span style="color: #DCDC32">Уровень раритетности 1 </span>
+					<br>
+					<span style="color: #32FA32">Уровень раритетности 2 </span>
+					<br>
+					<span style="color: #32DCDC">Уровень раритетности 3 </span>
+					<br>
+					<span style="color: #8282FF">Уровень раритетности 4 - Редкий</span> 
+					<br>
+					<span style="color: #B446FA">Уровень раритетности 5 - Очень редкий</span> 
+					<br>
+					<span style="color: #FA3232">Уровень раритетности 6 - Легендарный</span>
+				</p>
+				 
+				</div>
+				 
+			<!-- EO Content -->
+   		 </td>
+         <td background="images/scroll_6.png" width="39">&nbsp;</td>
+       </tr>
+       <tr>
+         <td height="39" width="39"><img src="images/scroll_7.png" alt="" height="39" width="39"></td>
+         <td background="images/scroll_8.png" height="39" width="560">&nbsp;</td>
+         <td height="39" width="39"><img src="images/scroll_9.png" alt="" height="39" width="39"></td>
+       </tr>
+     </tbody></table>
+     <p>&nbsp;</p>
+   </div></td>
+  </tr>
+  <tr>
+    <td height="65" width="300"><a href="index.html" target="_top"><img src="images/main_bottom.jpg" border="0" height="65" width="800"></a></td>
+  </tr>
+</tbody></table>
+
+
+
+</body></html>
